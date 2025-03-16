@@ -93,7 +93,8 @@ Right now there are 3 ways you can integrate Load Network for DA:
 
 1. [As a blob storage layer for EigenDA](da-integrations/ln-eigenda-proxy-server.md)
 2. [As a DA layer for Dymension RollApps](da-integrations/ln-dymension-da-client-for-rollap.md)
-3. DIY
+3. [As an OP-Stack rollup](load-network-for-evm-chains/deploying-op-stack-rollups.md)
+4. DIY
 
 DIY docs are a work in progress, but the [commit](https://github.com/dymensionxyz/dymint/commit/0140460c75bce6dc1cdcaf15527792734a0f7501) to add support for Load Network in Dymension can be used as a guide to implement Load DA elsewhere. Otherwise, if you want to work with us to use Load DA for your chain, get onboarded [here](https://calendly.com/decentlandlabs/founders-chat).
 
