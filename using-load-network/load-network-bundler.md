@@ -6,9 +6,13 @@ description: >-
 
 # Load Network Bundler
 
+### :zap: Quickstart
+
+To upload data to Load Network with the alphanet bundling service, see [here](https://docs.load.network/quickstart#upload-data) in the quickstart docs for the [upload SDK](https://github.com/weaveVM/bundler-upload-sdk) and [example repository](https://github.com/weaveVM/bundler-upload-example).
+
 ### About
 
-Load Networ Bundler is a data protocol specification and library that introduces the first bundled EVM transactions format. This protocol draws inspiration from Arweave's [ANS-102](https://github.com/ArweaveTeam/arweave-standards/blob/master/ans/ANS-102.md) specification.
+Load Network Bundler is a data protocol specification and library that introduces the first bundled EVM transactions format. This protocol draws inspiration from Arweave's [ANS-102](https://github.com/ArweaveTeam/arweave-standards/blob/master/ans/ANS-102.md) specification.
 
 _**Bundler as data protocol and library is still in PoC (Proof of Concept) phase - not recommended for production usage, testing purposes only.**_
 
