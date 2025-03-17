@@ -14,7 +14,7 @@ Let's make it easy to get going with Load Network. In this doc, we'll go through
 * [Uploading data](quickstart.md#upload-data)
 * [Integrating ledger storage](quickstart.md#integrating-ledger-storage)
 * [Using Load DA](quickstart.md#using-load-da)
-* Migrate from another storage layer
+* [Migrate from another storage layer](quickstart.md#migrate-from-another-storage-layer)
 
 ### Upload data
 
