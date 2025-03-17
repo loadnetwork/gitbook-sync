@@ -14,6 +14,7 @@ Let's make it easy to get going with Load Network. In this doc, we'll go through
 * [Uploading data](quickstart.md#upload-data)
 * [Integrating ledger storage](quickstart.md#integrating-ledger-storage)
 * [Using Load DA](quickstart.md#using-load-da)
+* Migrate from another storage layer
 
 ### Upload data
 
@@ -98,3 +99,29 @@ Right now there are 3 ways you can integrate Load Network for DA:
 
 DIY docs are a work in progress, but the [commit](https://github.com/dymensionxyz/dymint/commit/0140460c75bce6dc1cdcaf15527792734a0f7501) to add support for Load Network in Dymension can be used as a guide to implement Load DA elsewhere. Otherwise, if you want to work with us to use Load DA for your chain, get onboarded [here](https://calendly.com/decentlandlabs/founders-chat).
 
+### Migrate from another storage layer
+
+If your data is already on another storage layer like IPFS, Filecoin, Swarm or AWS S3, you can use specialized importer tools to migrate.
+
+#### AWS S3
+
+The [Load S3 SDK](https://github.com/weaveVM/wvm-aws-sdk-s3) provides a 1:1 compatible development interface for applications using AWS S3 for storage, keeping method names and parameters in tact so the only change should be one line: the `import` .
+
+#### Filecoin / IPFS
+
+The load-lassie import tool is the recommended way to easily migrate data stored via Filecoin or IPFS.
+
+Just provide the CID you want to import to the API, e.g.:
+
+`https://lassie.load.rs/import/<CID>`
+
+The importer is also self-hostable and further documented [here](https://github.com/weaveVM/wvm-lassie).
+
+#### Swarm
+
+Switching from Swarm to Load is as simple as changing the gateway you already use to resolve content from Swarm.
+
+* before: [https://api.gateway.ethswarm.org/bzz/](https://api.gateway.ethswarm.org/bzz/)\<hash>
+* after: [https://swarm.load.rs/bzz/](https://swarm.wvm.network/bzz/)\<hash>
+
+The first time Load's Swarm gateway sees a new hash, it uploads it to Load Network and serves it directly for subsequent calls. This effectively makes your Swarm data permanent on Load while maintaining the same hash.
