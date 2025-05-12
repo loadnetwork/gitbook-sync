@@ -19,6 +19,7 @@
 * [Load Network Bundler](using-load-network/load-network-bundler.md)
 * [Load Network Bundler Gateways](using-load-network/load-network-bundler-gateways.md)
 * [0xbabe2: Large Data Uploads](using-load-network/0xbabe2-large-data-uploads.md)
+* [Load S3 Endpoint](using-load-network/load-s3-endpoint.md)
 * [load:// Data Protocol](using-load-network/load-data-protocol.md)
 * [Load Network Precompiles](using-load-network/load-network-precompiles.md)
 * [LN-Native JSON-RPC Methods](using-load-network/ln-native-json-rpc-methods.md)
