@@ -24,8 +24,9 @@ After being added to the load0 bucket, the object gets added to the orchestrator
 
 ```bash
 curl -X POST "https://load0.network/upload" \
-     --data-binary "@./video.mp4" \
-     -H "Content-Type: video/mp4"
+  --data-binary "@./video.mp4" \
+  -H "Content-Type: video/mp4" \
+  -H "X-Load-Authorization: $YOUR_LNCP_AUTH_TOKEN"
 ```
 
 #### 2- Download object (browser)
