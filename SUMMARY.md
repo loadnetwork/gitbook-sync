@@ -28,17 +28,18 @@
   * [ethers (etherjs)](using-load-network/code-and-integrations-examples/ethers-etherjs.md)
   * [Deploying an ERC20 Token](using-load-network/code-and-integrations-examples/deploying-an-erc20-token.md)
 
+## Load Network Cloud Platform&#x20;
+
+* [Cloud Platform (LNCP)](load-network-cloud-platform/cloud-platform-lncp.md)
+* [Load S3 Endpoint](load-network-cloud-platform/load-s3-endpoint.md)
+* [load0 data layer](load-network-cloud-platform/load0-data-layer.md)
+
 ## Load Network for evm chains
 
 * [Ledger Archiver  (any chain)](load-network-for-evm-chains/ledger-archiver-any-chain.md)
 * [Ledger Archivers: State Reconstruction](load-network-for-evm-chains/ledger-archivers-state-reconstruction.md)
 * [DA ExEx (Reth-only)](load-network-for-evm-chains/da-exex-reth-only.md)
 * [Deploying OP-Stack Rollups](load-network-for-evm-chains/deploying-op-stack-rollups.md)
-
-## Load Network AVS
-
-* [LOAD1 AVS](load-network-avs/load1-avs.md)
-* [LOAD2 AVS](load-network-avs/load2-avs.md)
 
 ## Load Network ExEx
 
@@ -64,9 +65,3 @@
 ## LaoD Modular Framework
 
 * [About LaoD Modular Framework](laod-modular-framework/about-laod-modular-framework.md)
-
-## Load Network Cloud Platform&#x20;
-
-* [Cloud Platform (LNCP)](load-network-cloud-platform/cloud-platform-lncp.md)
-* [Load S3 Endpoint](load-network-cloud-platform/load-s3-endpoint.md)
-* [load0 data layer](load-network-cloud-platform/load0-data-layer.md)
