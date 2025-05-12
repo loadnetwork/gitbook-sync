@@ -15,6 +15,7 @@
 
 * [Compatibility & Performance](using-load-network/compatibility-and-performance.md)
 * [Network configurations](using-load-network/network-configurations.md)
+* [load0 data layer](using-load-network/load0-data-layer.md)
 * [Load Network Bundler](using-load-network/load-network-bundler.md)
 * [Load Network Bundler Gateways](using-load-network/load-network-bundler-gateways.md)
 * [0xbabe2: Large Data Uploads](using-load-network/0xbabe2-large-data-uploads.md)
