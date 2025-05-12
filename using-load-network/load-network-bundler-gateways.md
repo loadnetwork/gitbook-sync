@@ -63,8 +63,6 @@ This endpoint handles the job of data retrieval, caching, and content-type detec
 
 The Load Network gateway stack was built in response to problems of scale – great problems to have as a new network gaining traction. LN bundle data is now more accessible, resilient and performant. By running a gateway, you’re not just improving your own access to LN data – you’re contributing to a more robust, decentralized network.
 
-And for a complete dencentralized and robust network of Load Network gateways and data bundlers, we will build LOAD1 AVS, to secure the cloud infrastrucutre of LN, decentralize it, and add financial incentives to participate in the network.
-
 Test the gateways:
 
 * [gateway.wvm.rs](http://gateway.wvm.rs/) - [gateway.load.rs](https://gateway.load.rs)
