@@ -1,5 +1,5 @@
 ---
-description: About Cloud Network Cloud Platform
+description: About Load Network Cloud Platform
 ---
 
 # Cloud Platform (LNCP)
