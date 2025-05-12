@@ -12,6 +12,10 @@ Users just want to put their data somewhere and forget about the upkeep. Develop
 
 The Load Network Cloud is an all-in-one tool to interact with various Load Network storage interfaces and pipelines: one UI, one API key, various integrations, with web2 UX.
 
+{% hint style="info" %}
+Using the API keys generated on cloud.load.network - you can access other features such as load0 and Load S3 storage.
+{% endhint %}
+
 ### The Rationale
 
 Since we started Load Network, we’ve had the vision of an onchain data center – a decentralized network of high performance, cost effectiveness, high-liveness, fault tolerance, low latency and fast finalization, data-centric features and availability.
