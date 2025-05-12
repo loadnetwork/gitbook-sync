@@ -67,4 +67,8 @@ pub struct Bundle {
 An object data can be accessed via:
 
 * optimistic caching: `https://load0.network/resolve/{Bundle.optimistic_hash}`
-* from Load Network (once settled): `https://bundler.load.rs/v2/resolve/{Bundle.bundle_txid}`
+* from Load Network (once settled): `https://bundler.load.rs/v2/resolve/{Bundle.bundle_txid}`&#x20;
+
+
+
+Source code: [https://github.com/loadnetwork/load0/](https://github.com/loadnetwork/load0/)&#x20;
