@@ -1,5 +1,5 @@
 ---
-description: Explore WeaveVM developed ExExes
+description: Explore Load Network developed ExExes
 ---
 
 # Load Network ExExes
