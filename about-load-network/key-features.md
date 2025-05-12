@@ -44,7 +44,7 @@ And we can see that Borsh serialization combined with Brotli compression gives u
 
 ### Cost Efficient Data Settling
 
-LOAD's hyper computation, supercharged hardware, and interface with Arweave result in significantly cheaper data settlement costs on WeaveVM, which include the Arweave fees to cover the archiving costs. [Check the comparison calculator for realtime data](https://www.wvm.dev/calculator).
+LOAD's hyper computation, supercharged hardware, and interface with Arweave result in significantly cheaper data settlement costs on Load Network, which include the Arweave fees to cover the archiving costs. [Check the comparison calculator for realtime data](https://www.wvm.dev/calculator).
 
 <figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption><p>Data LOADing cost comparison</p></figcaption></figure>
 
@@ -56,12 +56,6 @@ Load Network can be used as either a DA solution or for data settlement (like Et
 
 Load Network offers self-DA secured by network economics along with a permanent data archive, secured by [Arweave](https://arweave.org).
 
-<figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption><p>Load Network stack</p></figcaption></figure>
-
 ### Bidirectional data pipeline with Arweave
 
-The LOAD team has developed the first precompiles that achieve a native bidirectional data pipeline with the Arweave network. In other words, with these precompiles (currently supported by Load Network testnet), you can read data from Arweave and send data to Arweave trustlessly and natively from a Solidity smart contract. [Learn more about Load Network precompiles in this section.](../using-load-network/load-network-precompiles.md)
-
-### Decentralized Cloud Infrastructure
-
-Leveraging EigenLayer's AVS technology, Load network will run several AVSs (primarily LOAD1 and LOAD2) to decentralize the access to Load Network data, create interoperability with Ethereum and the wider EigenLayer ecosystem, and offer temporal data storage.\
+The LOAD team has developed the first precompiles that achieve a native bidirectional data pipeline with the Arweave network. In other words, with these precompiles (currently supported by Load Network testnet), you can read data from Arweave and send data to Arweave trustlessly and natively from a Solidity smart contract. [Learn more about Load Network precompiles in this section.](../using-load-network/load-network-precompiles.md)\

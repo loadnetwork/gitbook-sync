@@ -6,9 +6,9 @@ description: ELI5 Load Network
 
 ### What is Load Network?
 
-Load is a high-performance blockchain built towards the goal of solving the EVM storage dilemma with [Arweave](https://arweave.org) and [EigenLayer](https://www.eigenlayer.xyz/). It gives the coming generation of high-performance chains a place to settle and store onchain data, without worrying about cost, availability, or permanence.
+Load is a high-performance blockchain built towards the goal of solving the EVM storage dilemma with [Arweave](https://arweave.org) ao [hyperbeam](https://github.com/permaweb/HyperBEAM). It gives the coming generation of high-performance chains a place to settle and store onchain data, without worrying about cost, availability, or permanence.
 
-Load Network offers scalable and cost-effective permanent storage by using Arweave as a decentralized hard drive, both at the node and smart contract layer, and EigenLayer as stack decentralization offering temporal storage and decentralizing the cloud infrastructure and data access of LN. This makes it possible to store large data sets and run web2-like applications without incurring EVM storage fees. Load Network's storage as calldata [costs around $0.05/MB, compared with Ethereum’s $450/MB.](https://wvm.dev/calculator)
+Load Network offers scalable and cost-effective permanent storage by using Arweave as a decentralized hard drive, both at the node and smart contract layer, and hyperbeam as stack decentralization leveraging a set of custom devices. This makes it possible to store large data sets and run web2-like applications without incurring EVM storage fees. Load Network's storage as calldata [costs around $0.05/MB, compared with Ethereum’s $450/MB.](https://wvm.dev/calculator)
 
 <figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption><p>Load Network Highlights</p></figcaption></figure>
 
@@ -16,7 +16,7 @@ Load Network offers scalable and cost-effective permanent storage by using Arwea
 
 Load Network mainnet is being built to be the highest performing EVM blockchain focusing on data storage, having the largest baselayer transaction input size limit (\~16MB), the largest ever EVM transaction (\~0.5TB 0xbabe transaction), very high network data throughput (multi-gigagas per second), high TPS, decentralization, full data storage stack offering (permanent and temporal), decentralized data gateways and data bundlers.
 
-Load Network achieves high decentralization by using Arweave as decentralized hard drive, EigenLayer as decentralized cloud stack, and allowing network participation (nodes) . Load Network will offer both of permanent data storage and temporal data storage while maintaining decentralized and censorship-resistant data retrieval & ingress (gateways, bundling services, etc).
+Load Network achieves high decentralization by using Arweave as decentralized hard drive, hyperbeam as decentralized cloud stack & extended consensus, and allowing network participation (nodes) . Load Network will offer both of permanent data storage and temporal data storage while maintaining decentralized and censorship-resistant data retrieval & ingress (gateways, bundling services, etc).
 
 ### Use Cases and How to Integrate&#x20;
 
@@ -32,7 +32,7 @@ You can check out the custom [DA-ExEx](../load-network-for-evm-chains/da-exex-re
 
 #### Storage Heavy dApps
 
-Load Network offers scalable and cost-effective storage by using Arweave as a decentralized hard drive, and EigenLayer as a decentralized cloud. This makes it possible to store large data sets and run web2-like applications without incurring EVM storage fees.&#x20;
+Load Network offers scalable and cost-effective storage by using Arweave as a decentralized hard drive, and hyperbeam as a decentralized cloud. This makes it possible to store large data sets and run web2-like applications without incurring EVM storage fees.&#x20;
 
 We have developed the first-ever Reth precompiles to facilitate, natively, a [bidirectional data pipeline with Arweave](https://blog.wvm.dev/weavevm-arweave-precompiles/) from the smart contract API level. Check out the full list of LN precompiled contracts [here](../using-load-network/load-network-precompiles.md).
 
@@ -43,20 +43,6 @@ Load Network is an EVM compatible blockchain, therefore, rollups can be deployed
 Rollups deployed on Load Network use the native LN gas token (tLOAD on Alphanet), similar to how ETH is used for OP rollups on Ethereum.
 
 For example, we released a technical guide for developers interested in deploying OP-Stack rollups on LN. [Check it out here](https://github.com/weaveVM/developers/blob/main/guides/op-rollup-deployment.md).&#x20;
-
-### Full Cloud Stack
-
-Load Network is being built to serve as an onchain data center, offering a full stack of solutions for decentralized storage and data management:
-
-#### Key Components:
-
-* **Permanent Data Storage**: Through LN native integration with Arweave via ExExes and precompiles.
-* **Temporal Data Storage**: Via Load Network LOAD2 AVS
-* **Decentralized Infrastructure**: Including gateways and a bundlers network functioning as an EigenLayer AVS (LOAD1)
-
-#### LOAD1 Functionality:
-
-LOAD1 AVS, powered by EigenLayer, will decentralize the access of Load Network Bundlers built on top of LN Bundler's data protocol network (which is already live on Alphanet v0.4.0 — permissionless). Decentralizing 0xbabe2 data broadcasting and retrieval via LOAD1, will unlock the largest EVM transaction (0xbabe2) wider in the Ethereum & EigenLayer ecosystem, giving access to 492GB size bundle.
 
 ### Explore Load Network Ecosystem Dapps (Evolving)
 
