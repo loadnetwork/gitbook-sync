@@ -1,5 +1,5 @@
 ---
-description: WVM Network Configurations
+description: Load Network Configurations
 ---
 
 # Network configurations

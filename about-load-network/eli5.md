@@ -56,6 +56,7 @@ For example, we released a technical guide for developers interested in deployin
 * [fairytale.sh ](https://fairytale.sh)— onchain publishing toolkit
 * [tokenize.rs ](https://app.gitbook.com/s/z2gd4Irh30FSnal6SJnL/)— Tokenize any data on Load Network
 * [bridge.load.network ](https://bridge.load.network)— Hyperlane bridge (Load Alphanet <> Ethereum Holesky)
+* [mediadao.xyz](https://mediadao.xyz) — a club for permanent content preservation.
 
 Useful Links
 
