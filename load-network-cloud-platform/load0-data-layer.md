@@ -6,6 +6,10 @@ description: About Load Network optimistic & high performance data layer
 
 `load0` is Bundler's [Large Bundle](https://github.com/weaveVM/bundler?tab=readme-ov-file#large-bundle) on steroids -- a cloud-like experience to upload and download data from [Load Network](https://docs.load.network) using the Bundler's `0xbabe2` transaction format powered with [SuperAccount](https://github.com/weaveVM/bundler?tab=readme-ov-file#superaccount) & S3 under the hood.
 
+{% hint style="info" %}
+To obtain API key and unlock higher limits, create an API key on [cloud.load.network](https://cloud.load.network)
+{% endhint %}
+
 ### Technical Architecture
 
 First, the user sends data to the load0 REST API `/upload` endpoint -- the data is pushed to load0's S3 bucket and returns an optimistic hash (keccak hash) which allows the users to instantly retrieve the object data from load0.

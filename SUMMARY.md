@@ -15,11 +15,9 @@
 
 * [Compatibility & Performance](using-load-network/compatibility-and-performance.md)
 * [Network configurations](using-load-network/network-configurations.md)
-* [load0 data layer](using-load-network/load0-data-layer.md)
 * [Load Network Bundler](using-load-network/load-network-bundler.md)
 * [Load Network Bundler Gateways](using-load-network/load-network-bundler-gateways.md)
 * [0xbabe2: Large Data Uploads](using-load-network/0xbabe2-large-data-uploads.md)
-* [Load S3 Endpoint](using-load-network/load-s3-endpoint.md)
 * [load:// Data Protocol](using-load-network/load-data-protocol.md)
 * [Load Network Precompiles](using-load-network/load-network-precompiles.md)
 * [LN-Native JSON-RPC Methods](using-load-network/ln-native-json-rpc-methods.md)
@@ -66,3 +64,9 @@
 ## LaoD Modular Framework
 
 * [About LaoD Modular Framework](laod-modular-framework/about-laod-modular-framework.md)
+
+## Load Network Cloud Platform&#x20;
+
+* [Cloud Platform (LNCP)](load-network-cloud-platform/cloud-platform-lncp.md)
+* [Load S3 Endpoint](load-network-cloud-platform/load-s3-endpoint.md)
+* [load0 data layer](load-network-cloud-platform/load0-data-layer.md)
