@@ -8,7 +8,7 @@ description: ELI5 Load Network
 
 Load is a high-performance blockchain built towards the goal of solving the EVM storage dilemma with [Arweave](https://arweave.org) ao [hyperbeam](https://github.com/permaweb/HyperBEAM). It gives the coming generation of high-performance chains a place to settle and store onchain data, without worrying about cost, availability, or permanence.
 
-Load Network offers scalable and cost-effective permanent storage by using Arweave as a decentralized hard drive, both at the node and smart contract layer, and hyperbeam as stack decentralization leveraging a set of custom devices. This makes it possible to store large data sets and run web2-like applications without incurring EVM storage fees. Load Network's storage as calldata [costs around $0.05/MB, compared with Ethereum’s $450/MB.](https://wvm.dev/calculator)
+Load Network offers scalable and cost-effective permanent storage by using Arweave as a decentralized hard drive, both at the node and smart contract layer, and hyperbeam as stack decentralization leveraging a set of custom-build devices. This makes it possible to store large data sets and run web2-like applications without incurring EVM storage fees. Load Network's storage as calldata [costs around $0.05/MB, compared with Ethereum’s $450/MB.](https://wvm.dev/calculator)
 
 <figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption><p>Load Network Highlights</p></figcaption></figure>
 
@@ -46,12 +46,16 @@ For example, we released a technical guide for developers interested in deployin
 
 ### Explore Load Network Ecosystem Dapps (Evolving)
 
+* [Load Network Cloud Platform](../load-network-cloud-platform/cloud-platform-lncp.md) —  The UI of the onchain data center
+* [Permacast](https://permacast.app) —  A decentralized media platform on Load Network
+* [Tapestry Finance ](https://www.tapestry.fi/)— Uniswap V2 fork
+* [shortcuts.bot ](https://shortcuts.bot/)— short links for Load Network txids
+* [load.yachts](https://www.load.yachts/) — subdomain resolver for Load Network content
 * [onchain.rs ](https://onchain.rs)— Dropbox onchain alternative
 * [relic.bot ](https://relic.bot)— Onchain Instagram
 * [fairytale.sh ](https://fairytale.sh)— onchain publishing toolkit
-* [swarm-importer](https://blog.wvm.dev/swarm-importer/) — import Swarm data to Load Network
-* [wvm-lassie](https://github.com/weaveVM/wvm-lassie) — Filecoin/IPFS data importer to Load Network&#x20;
-* [ipfs.rs ](https://ipfs.rs)— IPFS pinning service with Load Network permanent storage sidecar
+* [tokenize.rs ](https://app.gitbook.com/s/z2gd4Irh30FSnal6SJnL/)— Tokenize any data on Load Network
+* [bridge.load.network ](https://bridge.load.network)— Hyperlane bridge (Load Alphanet <> Ethereum Holesky)
 
 Useful Links
 
