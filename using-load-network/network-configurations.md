@@ -4,7 +4,7 @@ description: WVM Network Configurations
 
 # Network configurations
 
-### Alphanet V4
+### Alphanet V5
 
 * RPC URL:  [https://alphanet.load.network](https://alphanet.load.network)
 * Chain ID:  9496
@@ -13,7 +13,7 @@ description: WVM Network Configurations
 * Explorer: [https://explorer.load.network](https://explorer.load.network)
 * Chainlist: [https://chainlist.org/chain/9496](https://chainlist.org/chain/9496)
 
-### Add to MetaMask (MUST UPDATE SCREENSHOT)
+### Add to MetaMask
 
 Click on `Networks` > `Add a network` > `Add a network manually`
 

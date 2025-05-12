@@ -10,7 +10,7 @@ Load Network EVM is built on top of Reth, making it compatible as a network with
 
 Load Network EVM doesn't introduce new opcodes or breaking changes to the EVM itself, but it uses ExExes and adds custom precompiles:
 
-#### Alphanet V0.4.0
+#### Alphanet V0.5.3
 
 * **gas per byte:** 8
 * **gas limit:** 500\_000\_000
