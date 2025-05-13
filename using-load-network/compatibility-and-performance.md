@@ -12,7 +12,7 @@ Load Network EVM doesn't introduce new opcodes or breaking changes to the EVM it
 
 #### Alphanet V0.5.3
 
-* **gas per byte:** 8
+* **gas per non-zero byte:** 8
 * **gas limit:** 500\_000\_000
 * **block time:** 1s
 * **gas/s:** 500 mg/s
