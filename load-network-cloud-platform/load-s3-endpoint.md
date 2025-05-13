@@ -45,3 +45,5 @@ const s3Client = new S3Client({
 * `forcePathStyle` set to `true` is _always_ necessary.
 
 Github repo: [https://github.com/weaveVM/wvm-aws-sdk-s3](https://github.com/weaveVM/wvm-aws-sdk-s3)&#x20;
+
+For more code examples, checkout this repository: [https://github.com/loadnetwork/s3-examples](https://github.com/loadnetwork/s3-examples)
