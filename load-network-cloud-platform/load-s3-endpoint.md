@@ -4,6 +4,8 @@ description: Migrate to a permanent S3-compatible object storage in a single lin
 
 # Load S3 Endpoint
 
+### About
+
 Load.Network provides an S3 implementation which enables developers to store files permanently in a decentralized manner by using the common AWS S3 Patterns with minimal change.
 
 ### Installation
@@ -41,8 +43,50 @@ const s3Client = new S3Client({
 
 * `process.env.LOAD_ACCESS_KEY`: Contains your private service key in [cloud.load.network](https://cloud.load.network).
   * It looks similar to `load_acc_*******`
-* `https://s3.load.rs` is the endpoint for the S3 interface provided by Load Network.
+* `https://s3.load.rs` is the endpoint for the S3 interface provided by Load -- [codebase](https://github.com/weaveVM/wvm-aws-sdk-s3)
 * `forcePathStyle` set to `true` is _always_ necessary.
+
+### Rust Examples
+
+```rust
+use aws_sdk_s3::error::SdkError;
+use aws_sdk_s3::operation::create_bucket::CreateBucketError;
+use aws_sdk_s3::Client;
+
+pub async fn create_client() -> Client {
+    let config = aws_config::from_env()
+        .endpoint_url("https://s3.load.rs")
+        .region("eu-west-2")
+        .load()
+        .await;
+
+    let s3_config = aws_sdk_s3::config::Builder::from(&config)
+        .force_path_style(true)
+        .build();
+
+    Client::from_conf(s3_config)
+}
+
+pub async fn s3_create_bucket() -> Result<(), SdkError<CreateBucketError>> {
+    let client = create_client().await;
+    
+    match client.create_bucket()
+        .bucket("LoadNetworkBucketTest")
+        .send()
+        .await {
+            Ok(output) => {
+                println!("✅ Bucket created: {}", output.location().unwrap_or("(no location)"));
+                Ok(())
+            },
+            Err(err) => {
+                println!("❌ Error creating bucket: {}", err);
+                Err(err)
+            }
+    }
+}
+```
+
+for more examples, checkout the [rust-examples](https://github.com/loadnetwork/s3-examples/tree/main/rust-examples).
 
 Github repo: [https://github.com/weaveVM/wvm-aws-sdk-s3](https://github.com/weaveVM/wvm-aws-sdk-s3)&#x20;
 
