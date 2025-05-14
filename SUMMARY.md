@@ -31,7 +31,7 @@
 ## Load Network Cloud Platform&#x20;
 
 * [Cloud Platform (LNCP)](load-network-cloud-platform/cloud-platform-lncp.md)
-* [Load S3 Endpoint](load-network-cloud-platform/load-s3-endpoint.md)
+* [Load S3 Protocol](load-network-cloud-platform/load-s3-protocol.md)
 * [load0 data layer](load-network-cloud-platform/load0-data-layer.md)
 
 ## Load Network for evm chains
