@@ -50,7 +50,7 @@ LOAD's hyper computation, supercharged hardware, and interface with Arweave resu
 
 Even compared to temporary blob-based solutions, Load Network still offers a significantly cheaper permanent data solution (calldata).
 
-### WeaveVM is L0 for EVM L1s/L2s
+### Load is L0 for EVM L1s/L2s
 
 Load Network can be used as either a DA solution or for data settlement (like Ethereum). Since storing data on Load Network is very cheap compared to other EVM solutions, the network can be labeled as an L0 for other L1s or L2s.
 
