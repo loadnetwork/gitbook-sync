@@ -28,6 +28,11 @@
   * [ethers (etherjs)](using-load-network/code-and-integrations-examples/ethers-etherjs.md)
   * [Deploying an ERC20 Token](using-load-network/code-and-integrations-examples/deploying-an-erc20-token.md)
 
+## load hyperbeam
+
+* [About Load HyperBEAM](load-hyperbeam/about-load-hyperbeam.md)
+* [\~evm@1.0 device](load-hyperbeam/evm-1.0-device.md)
+
 ## Load Network Cloud Platform&#x20;
 
 * [Cloud Platform (LNCP)](load-network-cloud-platform/cloud-platform-lncp.md)
@@ -61,8 +66,3 @@
 
 * [LN-EigenDA Proxy Server](da-integrations/ln-eigenda-proxy-server.md)
 * [LN-Dymension: DA client for RollAP](da-integrations/ln-dymension-da-client-for-rollap.md)
-
-## load hyperbeam
-
-* [About Load HyperBEAM](load-hyperbeam/about-load-hyperbeam.md)
-* [\~evm@1.0 device](load-hyperbeam/evm-1.0-device.md)
