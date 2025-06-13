@@ -33,6 +33,10 @@
 * [About Load HyperBEAM](load-hyperbeam/about-load-hyperbeam.md)
 * [\~evm@1.0 device](load-hyperbeam/evm-1.0-device.md)
 
+***
+
+* [\~kem@1.0 device](kem-1.0-device.md)
+
 ## Load Network Cloud Platform&#x20;
 
 * [Cloud Platform (LNCP)](load-network-cloud-platform/cloud-platform-lncp.md)
