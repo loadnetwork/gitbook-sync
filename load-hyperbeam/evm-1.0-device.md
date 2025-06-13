@@ -21,7 +21,7 @@ Live demo at [ultraviolet.load.network](https://github.com/loadnetwork/load_hb/b
 `eval_bytecode()` takes 3 inputs, a signed raw transaction (N.B: chain id matters), a JSON-stringified state db and the output state path (here in this device it's in [./appchains](https://github.com/loadnetwork/load_hb/blob/main/native/load_revm_nif/appchains))
 
 ```rust
-/#[rustler::nif]
+#[rustler::nif]
 fn eval_bytecode(signed_raw_tx: String, state: String, cout_state_path: String) -> NifResult<String> {
     let state_option = if state.is_empty() { None } else { Some(state) };
     let evaluated_state: (String, String) = eval(signed_raw_tx, state_option, cout_state_path)?;
