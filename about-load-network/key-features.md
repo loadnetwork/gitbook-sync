@@ -24,7 +24,7 @@ Load Network Alphanet V2 (formerly WeaveVM V2) has raised the gas limit to 500M 
 
 This high data throughput can be handled thanks to the approach of beefy block production by super nodes and hardware acceleration.
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Ethereum Scaling Bottlenecks</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Ethereum Scaling Bottlenecks</p></figcaption></figure>
 
 ### &#x20;High-Throughput DA
 
