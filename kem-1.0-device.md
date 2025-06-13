@@ -98,7 +98,7 @@ Using the image glitcher kernel function - [source code](https://github.com/load
 
 <figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>original image</p></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption><p>glitched via the kernel function</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption><p>glitched via the kernel function - minted as AO NFT on Bazar <a href="https://bazar.arweave.net/#/asset/0z8MNwaRpkXhEgIxUv8ESNhtHxVGNfFkmGkoPtu0amY">https://bazar.arweave.net/#/asset/0z8MNwaRpkXhEgIxUv8ESNhtHxVGNfFkmGkoPtu0amY</a></p></figcaption></figure>
 
 ### References
 
