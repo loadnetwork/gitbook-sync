@@ -65,3 +65,4 @@
 ## load hyperbeam
 
 * [About Load HyperBEAM](load-hyperbeam/about-load-hyperbeam.md)
+* [\~evm@1.0 device](load-hyperbeam/evm-1.0-device.md)
