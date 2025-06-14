@@ -6,7 +6,9 @@ icon: bolt
 # Quickstart
 
 {% hint style="info" %}
-To easily feed Load Network docs to your favourite LLM, access the compressed knowledge (aka LLM.txt) file from Load Network: [https://gateway.load.rs/bundle/0x5eef8d0f9a71bbee9a566430e6b093f916900b7d6d91d34e5641768db4ee3ef7/0](https://gateway.load.rs/bundle/0x5eef8d0f9a71bbee9a566430e6b093f916900b7d6d91d34e5641768db4ee3ef7/0)&#x20;
+To easily feed Load Network docs to your favourite LLM, access the compressed knowledge (aka LLM.txt) file from Load Network:&#x20;
+
+[https://www.llmtxt.xyz/g/loadnetwork/gitbook-sync/0](https://www.llmtxt.xyz/g/loadnetwork/gitbook-sync/0) (last update: 14 June 2025)
 {% endhint %}
 
 Let's make it easy to get going with Load Network. In this doc, we'll go through the simplest ways to use Load across the most common use cases:
