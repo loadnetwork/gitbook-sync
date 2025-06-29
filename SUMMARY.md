@@ -38,6 +38,7 @@
 * [\~kem@1.0 device](kem-1.0-device.md)
 * [\~riscv-em@1.0 device](riscv-em-1.0-device.md)
 * [\~helios@1.0 device](helios-1.0-device.md)
+* [\~quantum-rt@1.0 device](quantum-rt-1.0-device.md)
 
 ## Load Network Cloud Platform&#x20;
 
