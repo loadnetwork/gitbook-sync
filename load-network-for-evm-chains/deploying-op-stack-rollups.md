@@ -1,5 +1,5 @@
 ---
-description: Guidance on How To Deploy OP-Stack Rollups on Laod Network
+description: Guidance on How To Deploy OP-Stack Rollups on Load Network
 ---
 
 # Deploying OP-Stack Rollups
