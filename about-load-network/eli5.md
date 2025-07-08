@@ -34,7 +34,7 @@ You can check out the custom [DA-ExEx](../load-network-for-evm-chains/da-exex-re
 
 Load Network offers scalable and cost-effective storage by using Arweave as a decentralized hard drive, and hyperbeam as a decentralized cloud. This makes it possible to store large data sets and run web2-like applications without incurring EVM storage fees.&#x20;
 
-We have developed the first-ever Reth precompiles to facilitate, natively, a [bidirectional data pipeline with Arweave](https://blog.wvm.dev/weavevm-arweave-precompiles/) from the smart contract API level. Check out the full list of LN precompiled contracts [here](../using-load-network/load-network-precompiles.md).
+We have developed the first-ever Reth precompiles to facilitate, natively, a [bidirectional data pipeline with Arweave](https://blog.wvm.dev/weavevm-arweave-precompiles/) from the smart contract API level. Check out the full list of LN precompiled contracts [here](../using-load-network/supported-precompiles.md).
 
 #### Foundational Layer (L1) For Rollups
 

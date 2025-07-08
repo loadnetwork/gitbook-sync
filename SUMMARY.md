@@ -15,8 +15,8 @@
 
 * [Compatibility & Performance](using-load-network/compatibility-and-performance.md)
 * [Network configurations](using-load-network/network-configurations.md)
-* [Load Network Precompiles](using-load-network/load-network-precompiles.md)
-* [LN-Native JSON-RPC Methods](using-load-network/ln-native-json-rpc-methods.md)
+* [Supported Precompiles](using-load-network/supported-precompiles.md)
+* [JSON-RPC Methods](using-load-network/json-rpc-methods.md)
 * [EVM Bundler](using-load-network/evm-bundler/README.md)
   * [Load Network Bundler](using-load-network/evm-bundler/load-network-bundler.md)
   * [0xbabe2: Large Data Uploads](using-load-network/evm-bundler/0xbabe2-large-data-uploads.md)
