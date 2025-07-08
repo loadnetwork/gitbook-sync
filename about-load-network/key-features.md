@@ -10,7 +10,7 @@ Let's explore the key features of Load Network:
 
 Load Network achieves enterprise-like performance by limiting block production to beefy hardware nodes while maintaining trustless and decentralized block validation.
 
-What this means, is that anyone with a sufficient amount of $LOAD tokens meeting the PoS staking threshold, plus the necessary hardware and internet connectivity (super-node, enterprise hardware), can run a node. This approach is inspired by Vitalik Buterin's work in ["The Endgame"](https://vitalik.eth.limo/general/2021/12/06/endgame.html) post.
+What this means, is that anyone with a sufficient amount of $AO tokens (read more about $AO security below in this page) meeting the PoS staking threshold, plus the necessary hardware and internet connectivity (super-node, enterprise hardware), can run a node. This approach is inspired by Vitalik Buterin's work in ["The Endgame"](https://vitalik.eth.limo/general/2021/12/06/endgame.html) post.
 
 > **Block&#x20;**_**production**_**&#x20;is centralized, block&#x20;**_**validation**_**&#x20;is trustless and highly decentralized, and censorship is still prevented**.
 
@@ -34,19 +34,26 @@ By building on HyperBEAM and ao network, we are gradually device'fing the EVM no
 
 This horizontally scalable, and parallel architecture allow the Load Network EVM nodes to be modularly composable in a totally new paradigm. For example a node run by Alice may not implement the JSON-RPC component, and it can pay usage fee (compute paid in $AO) for its usage from another node that has this missing evm component, for example, from Bob.
 
-With this model, we will be achieving ao network $AO synergie and interabillity. To read more about the rationale behind this, check out the "[mission π](https://blog.decent.land/mission-pi/)" blog post
+With this model, we will be achieving ao network $AO synergy and interoperability. To read more about the rationale behind this, check out the "[mission π](https://blog.decent.land/mission-pi/)" blog post
 
-### EVM interface for Arweave Data: Permanent History
+### Programmable EVM data with Arweave Permanence
 
-Load Network uses a set of Reth execution extensions (ExExes) to serialize each block in Borsh, then compress it in Brotli before sending it to Arweave. These computations ensure a cost-efficient, permanent history backup on Arweave. This feature is crucial for other L1s/L2s using LOAD for data settling (LOADing).&#x20;
+Load Network uses a set of Reth execution extensions (ExExes) to serialize each block in Borsh, then compress it in Brotli before sending it to Arweave. These computations ensure a cost-efficient, permanent history backup on Arweave. This feature is crucial for other L1s/L2s using load network for data settling aka LOADing \[^^].&#x20;
 
 In the [diagrams & benchmarks here](https://github.com/weaveVM/wvm-research), we show the difference between various compression algorithms applied to Borsh-serialized empty block (zero transactions) and JSON-serialized empty block.&#x20;
 
 And we can see that Borsh serialization combined with Brotli compression gives us the most efficient compression ratio in the data serialization-compression process.
 
+At the time of writing, and since the data protocol inception, Load Network Arweave ExEx is the largest data protocol on top of Arweave in terms of the number of settled dataitems.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+The Load Network interface with Arweave with more than just block data settling. We have developed the first precompiles that achieve a native **bidirectional data pipeline** with the Arweave network. In other words, with these precompiles (currently supported by Load Network testnet), you can read data from Arweave and send data to Arweave trustlessly and natively from a Solidity smart contract, creating the first ever programmable scalable evm data, backed with Arweave permanence. [Learn more about Load Network precompiles in this section.](../using-load-network/supported-precompiles.md)\
+
+
 ### Cost Efficient Data Settling
 
-LOAD's hyper computation, supercharged hardware, and interface with Arweave result in significantly cheaper data settlement costs on Load Network, which include the Arweave fees to cover the archiving costs. [Check the comparison calculator for realtime data](https://www.wvm.dev/calculator).
+Load's hyper computation, supercharged hardware, and interface with Arweave result in significantly cheaper data settlement costs on Load Network, which include the Arweave fees to cover the archiving costs. [Check the comparison calculator for realtime data](https://www.wvm.dev/calculator).
 
 <figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption><p>Data LOADing cost comparison</p></figcaption></figure>
 
@@ -58,6 +65,3 @@ Load Network can be used as either a DA solution or for data settlement (like Et
 
 Load Network offers self-DA secured by network economics along with a permanent data archive, secured by [Arweave](https://arweave.org).
 
-### Bidirectional data pipeline with Arweave
-
-The LOAD team has developed the first precompiles that achieve a native bidirectional data pipeline with the Arweave network. In other words, with these precompiles (currently supported by Load Network testnet), you can read data from Arweave and send data to Arweave trustlessly and natively from a Solidity smart contract. [Learn more about Load Network precompiles in this section.](../using-load-network/supported-precompiles.md)\
