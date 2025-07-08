@@ -15,12 +15,12 @@
 
 * [Compatibility & Performance](using-load-network/compatibility-and-performance.md)
 * [Network configurations](using-load-network/network-configurations.md)
+* [Load Network Precompiles](using-load-network/load-network-precompiles.md)
+* [LN-Native JSON-RPC Methods](using-load-network/ln-native-json-rpc-methods.md)
 * [EVM Bundler](using-load-network/evm-bundler/README.md)
   * [Load Network Bundler](using-load-network/evm-bundler/load-network-bundler.md)
   * [0xbabe2: Large Data Uploads](using-load-network/evm-bundler/0xbabe2-large-data-uploads.md)
   * [Bundlers Gateways](using-load-network/evm-bundler/bundlers-gateways.md)
-* [Load Network Precompiles](using-load-network/load-network-precompiles.md)
-* [LN-Native JSON-RPC Methods](using-load-network/ln-native-json-rpc-methods.md)
 
 ***
 
@@ -28,6 +28,12 @@
   * [Self Hosted RPC Proxies](miscellaneous/self-hosted-rpc-proxies.md)
   * [Deploying an ERC20](miscellaneous/deploying-an-erc20.md)
   * [load:// Data Protocol](miscellaneous/load-data-protocol.md)
+
+## Load Network Cloud Platform&#x20;
+
+* [Cloud Platform (LNCP)](load-network-cloud-platform/cloud-platform-lncp.md)
+* [Load S3 Protocol](load-network-cloud-platform/load-s3-protocol.md)
+* [load0 data layer](load-network-cloud-platform/load0-data-layer.md)
 
 ## load hyperbeam
 
@@ -40,12 +46,6 @@
 * [\~riscv-em@1.0 device](riscv-em-1.0-device.md)
 * [\~helios@1.0 device](helios-1.0-device.md)
 * [\~quantum-rt@1.0 device](quantum-rt-1.0-device.md)
-
-## Load Network Cloud Platform&#x20;
-
-* [Cloud Platform (LNCP)](load-network-cloud-platform/cloud-platform-lncp.md)
-* [Load S3 Protocol](load-network-cloud-platform/load-s3-protocol.md)
-* [load0 data layer](load-network-cloud-platform/load0-data-layer.md)
 
 ## Load Network for evm chains
 

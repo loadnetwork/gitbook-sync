@@ -8,6 +8,6 @@ description: >-
 
 <figure><img src=".gitbook/assets/Frame 6 (1).png" alt=""><figcaption><p>Load Network ≈ The onchain data center</p></figcaption></figure>
 
-{% hint style="warning" %}
-Load Network did not issue a token yet. Currently running on testnet.
+{% hint style="info" %}
+The Load Network fair launch is now live. [Learn how to get $LOAD](https://blog.load.network/fair-launch-tokenomics)
 {% endhint %}
