@@ -20,19 +20,21 @@ These "super nodes" producing Load Network blocks result in a high-performance E
 
 Raising the gas limit increases the block size and operations per block, affecting both History growth and State growth (mainly relevant for our point here).
 
-Load Network Alphanet V2 (formerly WeaveVM V2) has raised the gas limit to 500M gas (doing 500 mg/s), and lowered the gas per non-zero byte to 8. These changes have resulted in a larger max theoretical block size of 62 MB, and consequently, the network data throughput is \~62 MBps.
+In Load Network Alphanet we have raised the gas limit to 500M gas (doing 500 mg/s), and lowered the gas per non-zero byte to 8. These changes have resulted in a larger max theoretical block size of 62 MB, and consequently, the network data throughput is \~62 MBps.
 
 This high data throughput can be handled thanks to the approach of beefy block production by super nodes and hardware acceleration.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Ethereum Scaling Bottlenecks</p></figcaption></figure>
-
 ### &#x20;High-Throughput DA
 
-Up until now, there's been no real-world, scalable DA layer ready to handle high data throughput with permanent storage. In LOAD Alphanet V2, we've already reached 62 MBps with a projection to hit 125 MBps in mainnet.
+Up until now, there's been no real-world, scalable DA (altDA) layer ready to handle high data throughput with permanent storage. We Load's Alphanet, we've already reached a maximum of 62 MBps, with a projection to hit 125 MBps in mainnet.
 
-### Parallel Execution
+### Modular EVM Node Components Design
 
-To reduce the gas fees consumed by EVM opcode execution, we're aiming to use a parallel execution EVM client for the Reth node in mainnet.
+By building on HyperBEAM and ao network, we are gradually device'fing the EVM node components as HyperBEAM NIF -Native Implement Function- devices.
+
+This horizontally scalable, and parallel architecture allow the Load Network EVM nodes to be modularly composable in a totally new paradigm. For example a node run by Alice may not implement the JSON-RPC component, and it can pay usage fee (compute paid in $AO) for its usage from another node that has this missing evm component, for example, from Bob.
+
+With this model, we will be achieving ao network $AO synergie and interabillity. To read more about the rationale behind this, check out the "[mission π](https://blog.decent.land/mission-pi/)" blog post
 
 ### EVM interface for Arweave Data: Permanent History
 
