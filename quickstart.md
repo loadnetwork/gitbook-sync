@@ -20,7 +20,29 @@ Let's make it easy to get going with Load Network. In this doc, we'll go through
 
 ### Upload data
 
-The easiest way to upload data to Load Network is to use a bundling service. Bundling services cover upload costs on your behalf, and feel just like using a web2 API.
+#### As a non-developer: LNCP
+
+The easiest way to interface with Load Network storage capabilities is through the cloud web app: [cloud.load.network](https://cloud.load.network/)
+
+<figure><img src=".gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+
+#### As a developer
+
+#### _1- Highly scalable bundling service_
+
+To load huge amount of data to load network without being tied to the technical network limitations (tx size, block size, network throughput), you can use the load0 bundling service. It's a straightforward REST-based bundling service that let you upload data and retrieve it instantly, at scale:
+
+```bash
+curl -X POST "https://load0.network/upload" \
+     --data-binary "@./video.mp4" \
+     -H "Content-Type: video/mp4"
+```
+
+For more examples, check out the [load0 documentation](load-network-cloud-platform/load0-data-layer.md)
+
+#### _2- Direct onchain data bundling_
+
+However, if you prefer to directly settle your data onchain via the EVM bundles transaction format (0xbabe), the easiest way to do it is to use an 0xbabe2 bundling service.
 
 The recommended testnet bundling service endpoints are:
 
@@ -72,11 +94,11 @@ main().catch(error => {
 
 ...Or [clone this example repo](https://github.com/weaveVM/bundler-upload-example) to avoid copy-pasting.
 
-#### Need to upload a huge amount of data?
+#### Want to build your own 0xbabe2 bundling service?
 
 The above example demonstrates posting data in a single Load Network base layer tx. This is limited by Load's blocksize, so tops out at about 8mb.
 
-For practically unlimited upload sizes, you can use the large bundles spec to submit data in chunks. Chunks can even be uploaded in parallel, making large bundles a performant way to handle big uploads.
+For practically unlimited onchain upload sizes, you can use the large bundles spec to submit data in chunks. Chunks can even be uploaded in parallel, making large bundles a performant way to handle big uploads.
 
 The [Rust Bundler SDK](https://github.com/weaveVM/bundler?tab=readme-ov-file#0xbabe2-large-bundle) makes it possible for developers to spin up their own bundling services with support for large bundles.
 
@@ -113,9 +135,15 @@ If your data is already on another storage layer like IPFS, Filecoin, Swarm or A
 
 The [Load S3 SDK](https://github.com/weaveVM/wvm-aws-sdk-s3) provides a 1:1 compatible development interface for applications using AWS S3 for storage, keeping method names and parameters in tact so the only change should be one line: the `import` .
 
-#### Filecoin / IPFS
+#### IPFS
 
-The load-lassie import tool is the recommended way to easily migrate data stored via Filecoin or IPFS.
+The [Load Network Cloud Platform](load-network-cloud-platform/cloud-platform-lncp.md) operates an IPFS node that settles the data back to Load Network.  By setting the network to `ipfs.rs`, you are practically using IPFS compatible data protocol on top of Load Network.
+
+<figure><img src=".gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+
+#### Filecoin&#x20;
+
+The load-lassie import tool is the recommended way to easily migrate data stored via Filecoin.
 
 Just provide the CID you want to import to the API, e.g.:
 
