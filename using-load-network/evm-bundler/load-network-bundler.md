@@ -51,7 +51,7 @@ pub struct BundleData {
 }
 ```
 
-<figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption><p>Envelope Lifecycle</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption><p>Envelope Lifecycle</p></figcaption></figure>
 
 #### Bundles Versioning
 
@@ -114,7 +114,7 @@ pub struct TxEnvelopeWrapper {
 
 The selection of transaction types follows clear efficiency principles. Legacy transactions were chosen for envelopes due to their minimal size (144 bytes), making them the most space-efficient option for data storage. EIP-1559 transactions were adopted for bundles as the widely accepted standard for transaction processing.
 
-<figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption><p>EVM transaction types - size in bytes</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption><p>EVM transaction types - size in bytes</p></figcaption></figure>
 
 #### 4. Notes
 
@@ -152,7 +152,7 @@ let loaded_chunkers = super_account.load_chunkers(None).await.unwrap(); // None 
 
 Large Bundles are built on top of the Bundler data specification. In simple terms, a Large Bundle consists of `n` smaller chunks (standalone bundles) that are sequentially connected tail-to-head and then at the end the Large Bundle is a reference to all the sequentially related chunks, packing all of the chunks IDs in a single `0xbabe2` bundle and sending it to Load Network.
 
-<figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption><p>0xbabe2 transaction lifecycle</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption><p>0xbabe2 transaction lifecycle</p></figcaption></figure>
 
 #### Large Bundle Size Calculation
 
