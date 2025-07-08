@@ -36,7 +36,7 @@ This horizontally scalable, and parallel architecture allow the Load Network EVM
 
 With this model, we will be achieving ao network $AO synergy and interoperability. To read more about the rationale behind this, check out the "[mission π](https://blog.decent.land/mission-pi/)" blog post
 
-### Programmable EVM data with Arweave Permanence
+### Programmable EVM data & Arweave Permanence
 
 Load Network uses a set of Reth execution extensions (ExExes) to serialize each block in Borsh, then compress it in Brotli before sending it to Arweave. These computations ensure a cost-efficient, permanent history backup on Arweave. This feature is crucial for other L1s/L2s using load network for data settling aka LOADing \[^^].&#x20;
 
@@ -59,9 +59,10 @@ Load's hyper computation, supercharged hardware, and interface with Arweave resu
 
 Even compared to temporary blob-based solutions, Load Network still offers a significantly cheaper permanent data solution (calldata).
 
-### Load is L0 for EVM L1s/L2s
+### Alien Stack, Alien Network Security
 
-Load Network can be used as either a DA solution or for data settlement (like Ethereum). Since storing data on Load Network is very cheap compared to other EVM solutions, the network can be labeled as an L0 for other L1s or L2s.
+The Load Network is the first EVM L1 to leverage Arweave storage and interoperability natively inside the EVM, and obviously, the first EVM L1 to adopt the modular evm node components paradigm powered by HyperBEAM devices.
 
-Load Network offers self-DA secured by network economics along with a permanent data archive, secured by [Arweave](https://arweave.org).
+To align this alien tech stack, we needed a new aligned alien network security.  On Load Network, users will pay gas in load's native gas token, $LOAD.  On the node operators part, a node that is not running the ful stack of evm components, is required to buy compute from other nodes offering the missing component by paying $AO.
 
+Additionally, as Load is built on top of HyperBEAM (ao network) and Arweave, it's logically to inherits the AO network security and reinforce Load's self-DA security. For these reasons, Load node operators stake $AO in order to join the EVM L1 block production.
