@@ -21,19 +21,13 @@
   * [Bundlers Gateways](using-load-network/evm-bundler/bundlers-gateways.md)
 * [Load Network Precompiles](using-load-network/load-network-precompiles.md)
 * [LN-Native JSON-RPC Methods](using-load-network/ln-native-json-rpc-methods.md)
-* [load:// Data Protocol](using-load-network/load-data-protocol.md)
-* [Self-Hosted RPC Proxies](using-load-network/self-hosted-rpc-proxies/README.md)
-  * [Rust Proxy](using-load-network/self-hosted-rpc-proxies/rust-proxy.md)
-  * [JavaScript Proxy](using-load-network/self-hosted-rpc-proxies/javascript-proxy.md)
-* [Code & Integrations Examples](using-load-network/code-and-integrations-examples/README.md)
-  * [ethers (etherjs)](using-load-network/code-and-integrations-examples/ethers-etherjs.md)
-  * [Deploying an ERC20 Token](using-load-network/code-and-integrations-examples/deploying-an-erc20-token.md)
 
 ***
 
 * [Miscellaneous ](miscellaneous/README.md)
   * [Self Hosted RPC Proxies](miscellaneous/self-hosted-rpc-proxies.md)
   * [Deploying an ERC20](miscellaneous/deploying-an-erc20.md)
+  * [load:// Data Protocol](miscellaneous/load-data-protocol.md)
 
 ## load hyperbeam
 

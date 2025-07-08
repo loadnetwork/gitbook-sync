@@ -1,5 +1,5 @@
 ---
-description: About load:// data retrieving protocol
+description: Using load:// data retrieval protocol
 ---
 
 # load:// Data Protocol
