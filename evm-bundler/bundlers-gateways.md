@@ -1,10 +1,8 @@
 ---
-description: >-
-  The Load Network Gateway Stack: Fast, Reliable Access to Load Network Data (to
-  be decentralized with LOAD1)
+description: 'The Load Network Gateway Stack: Fast, Reliable Access to Load Network Data'
 ---
 
-# Load Network Bundler Gateways
+# Bundlers Gateways
 
 All storage chains have the same issue: even if the data storage is decentralized, retrieval is handled by a centralized gateway. A solution to this problem is just to provide a way for anyone to easily run their own gateway – and if you’re an application building on Load Network, that’s a great way to ensure content is rapidly retrievable from the blockchain.
 
