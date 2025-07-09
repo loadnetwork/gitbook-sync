@@ -26,9 +26,9 @@ The easiest way to interface with Load Network storage capabilities is through t
 
 #### As a developer
 
-#### _1- Highly scalable bundling service_
+#### Highly scalable bundling service
 
-To load huge amount of data to load network without being tied to the technical network limitations (tx size, block size, network throughput), you can use the load0 bundling service. It's a straightforward REST-based bundling service that let you upload data and retrieve it instantly, at scale:
+To load huge amount of data to Load Network without being tied to the technical network limitations (tx size, block size, network throughput), you can use the load0 bundling service. It's a straightforward REST-based bundling service that let you upload data and retrieve it instantly, at scale:
 
 ```bash
 curl -X POST "https://load0.network/upload" \
@@ -38,7 +38,7 @@ curl -X POST "https://load0.network/upload" \
 
 For more examples, check out the [load0 documentation](load-network-cloud-platform/load0-data-layer.md)
 
-#### _2- Direct onchain data bundling_
+#### Direct onchain data bundling
 
 However, if you prefer to directly settle your data onchain via the EVM bundles transaction format (0xbabe), the easiest way to do it is to use an 0xbabe2 bundling service.
 
