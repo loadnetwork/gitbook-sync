@@ -61,6 +61,6 @@ Even compared to temporary blob-based solutions, Load Network still offers a sig
 
 The Load Network is the first EVM L1 to leverage Arweave storage and interoperability natively inside the EVM, and obviously, the first EVM L1 to adopt the modular evm node components paradigm powered by HyperBEAM devices.
 
-To align this alien tech stack, we needed an alien security model.  On Load Network, users will pay gas in Load's native gas token, $LOAD.  On the node operator side, a node that is not running the ful stack of EVM components, is required to buy compute from other nodes offering the missing component by paying $AO.
+To align this alien tech stack, we needed an alien security model.  On Load Network, users will pay gas in Load's native gas token, $LOAD.  On the node operator side, a node that is not running the full stack of EVM components, is required to buy compute from other nodes offering the missing component by paying $AO.
 
 Additionally, as Load is built on top of HyperBEAM (ao network) and Arweave, it's logical to inherit the network security of AO and reinforce Load's self-DA security. For these reasons, Load node operators stake $AO in order to join the EVM L1 block production.
