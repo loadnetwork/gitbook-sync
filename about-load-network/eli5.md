@@ -6,9 +6,9 @@ description: ELI5 Load Network
 
 ### What is Load Network?
 
-Load is a high-performance blockchain built towards the goal of solving the EVM storage dilemma with [Arweave](https://arweave.org) and ao [hyperbeam](https://github.com/permaweb/HyperBEAM). It gives the coming generation of high-performance chains a place to settle and store onchain data, without worrying about cost, availability, or permanence.
+Load is a high-performance blockchain built towards the goal of solving the EVM storage dilemma with [Arweave](https://arweave.org) and ao [HyperBEAM](https://github.com/permaweb/HyperBEAM). It gives the coming generation of high-performance chains a place to settle and store onchain data, without worrying about cost, availability, or permanence.
 
-Load Network offers scalable and cost-effective permanent storage by using Arweave as a decentralized hard drive, both at the node and smart contract layer, hyperbeam as modular stack of evm node components, ad ao network for hyperbeam compute and underlying network security. This makes it possible to store large data sets and run web2-like applications without incurring EVM storage fees.&#x20;
+Load Network offers scalable and cost-effective permanent storage by using Arweave as a decentralized hard drive, both at the node and smart contract layer, HyperBEAM as modular stack of EVM node components, and ao network for compute and network security. This makes it possible to store large data sets and run web2-like applications without incurring EVM storage fees.&#x20;
 
 <figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption><p>Load Network Highlights</p></figcaption></figure>
 
@@ -16,13 +16,13 @@ Load Network offers scalable and cost-effective permanent storage by using Arwea
 
 Load Network mainnet is being built to be the highest performing EVM blockchain focusing on data storage, having the largest baselayer transaction input size limit (\~16MB), the largest ever EVM transaction (\~0.5TB 0xbabe transaction), very high network data throughput (multi-gigagas per second), high TPS, decentralization, full data storage stack offering (permanent and temporal), decentralized data gateways and data bundlers.
 
-Load Network achieves high decentralization by using Arweave as decentralized hard drive, hyperbeam as compute marketplace of evm node components, and permissionless block production participation (running a node). Load Network will offer both of permanent data storage and temporal data storage while maintaining decentralized and censorship-resistant data retrieval & ingress (gateways, bundling services, etc).
+Load Network achieves high decentralization by using Arweave as decentralized hard drive, HyperBEAM as a compute marketplace of EVM node components, and permissionless block production participation (running a node). Load Network will offer both permanent and temporary data storage while maintaining decentralized and censorship-resistant retrieval & ingress (gateways, bundling services, etc).
 
 ### Use Cases and How to Integrate&#x20;
 
 #### Ledger Data Storage
 
-Chains like Metis, RSS3 and Dymension use Load Network to permanently store onchain data, acting as a decentralized archival node. If you look at the common problems that are flagged up on [L2Beat](https://l2beat.com/scaling/summary), a lot of it has to do with centralized sources of truth and data that can’t be independently audited or reconstructed in a case where there’s a failure in the chain. LN adds a layer of protection and transparency to L2s, ruling out some of the failure modes of centralization. Learn more about the [wvm-archiver tool here](../load-network-for-evm-chains/ledger-archiver-any-chain.md).
+Chains like Metis, RSS3 and Dymension use Load Network to permanently store onchain data, acting as a decentralized archival node. If you look at the common problems that are flagged up on [L2Beat](https://l2beat.com/scaling/summary), a lot of it has to do with centralized sources of truth and data that can’t be independently audited or reconstructed in a case where there’s a failure in the chain. Load adds a layer of protection and transparency to L2s, ruling out some of the failure modes of centralization. Learn more about the [wvm-archiver tool here](../load-network-for-evm-chains/ledger-archiver-any-chain.md).
 
 #### High-Throughput Data Availability (DA)
 
@@ -34,19 +34,19 @@ You can check out the custom [DA-ExEx](../load-network-for-evm-chains/da-exex-re
 
 Load Network offers scalable and cost-effective storage by using Arweave as a decentralized hard drive, and hyperbeam as a decentralized cloud. This makes it possible to store large data sets and run web2-like applications without incurring EVM storage fees.&#x20;
 
-We have developed the first-ever Reth precompiles to facilitate, natively, a [bidirectional data pipeline with Arweave](https://blog.wvm.dev/weavevm-arweave-precompiles/) from the smart contract API level. Check out the full list of LN precompiled contracts [here](../using-load-network/supported-precompiles.md).
+We have developed the first-ever Reth precompiles to natively facilitate a [bidirectional data pipeline with Arweave](https://blog.wvm.dev/weavevm-arweave-precompiles/) from the smart contract API level. Check out the full list of Load precompiled contracts [here](../using-load-network/supported-precompiles.md).
 
 #### Foundational Layer (L1) For Rollups
 
-Load Network is an EVM compatible blockchain, therefore, rollups can be deployed on LN as same as the rollups state on Ethereum. In contrast to Ethereum or other EVM L1s, rollups deployed on top of LN benefit out-of-the-box from the data-centric features provided by LN (for rollup data settlement and DA).
+Load Network is an EVM compatible blockchain, therefore, rollups can be deployed on Load the same as rollups on Ethereum. In contrast to Ethereum or other EVM L1s, rollups deployed on top of Load benefit out-of-the-box from the data-centric features provided by Load (for rollup data settlement and DA).
 
-Rollups deployed on Load Network use the native LN gas token (tLOAD on Alphanet), similar to how ETH is used for OP rollups on Ethereum.
+Rollups deployed on Load Network use the native Load gas token (tLOAD on Alphanet), similar to how ETH is used for OP rollups on Ethereum.
 
-For example, we released a technical guide for developers interested in deploying OP-Stack rollups on LN. [Check it out here](https://github.com/weaveVM/developers/blob/main/guides/op-rollup-deployment.md).&#x20;
+For example, we released a technical guide for developers interested in deploying OP-Stack rollups on Load. [Check it out here](https://github.com/weaveVM/developers/blob/main/guides/op-rollup-deployment.md).&#x20;
 
 #### The Onchain Data Center
 
-Load network is being built with the vision of being the onchain data center. To accomplish this vision, we have started working on several web2 and web3 data pipelines into Load and Arweave, with web2 cloud experience. [Start using LNCP now!](../load-network-cloud-platform/cloud-platform-lncp.md)
+Load network is being built with the vision of being the onchain data center. To accomplish this vision, we have started working on several web2 and web3 data pipelines into Load and Arweave, with web2 cloud experience. [Start using Load Cloud now](../load-network-cloud-platform/cloud-platform-lncp.md)!
 
 ### Explore Load Network Ecosystem Dapps (Evolving)
 
@@ -61,7 +61,7 @@ Load network is being built with the vision of being the onchain data center. To
 * [tokenize.rs ](https://app.gitbook.com/s/z2gd4Irh30FSnal6SJnL/)— Tokenize any data on Load Network
 * [bridge.load.network ](https://bridge.load.network)— Hyperlane bridge (Load Alphanet <> Ethereum Holesky)
 * [mediadao.xyz](https://mediadao.xyz) — a club for permanent content preservation.
-* [Dymension.xyz Roll-Apps ](https://portal.dymension.xyz/rollapps)— deploy a dym roll-app using Load DA
+* [Dymension.xyz Roll-Apps ](https://portal.dymension.xyz/rollapps)— deploy a Dymension roll-app using Load DA
 
 Useful Links
 
