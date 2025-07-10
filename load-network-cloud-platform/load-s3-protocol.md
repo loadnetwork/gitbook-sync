@@ -2,11 +2,20 @@
 description: Migrate to a permanent S3-compatible object storage in a single line change
 ---
 
-# Load S3 Endpoint
+# Load S3 Protocol
 
 ### About
 
 Load.Network provides an S3 implementation which enables developers to store files permanently in a decentralized manner by using the common AWS S3 Patterns with minimal change.
+
+#### Data pipelines
+
+At the time of writing, the Load S3 supports two data pipelines:
+
+* load0: programmable EVM data with the Arweave permanence
+* Turbo Arweave: Arweave ans-104 dataitems
+
+In the near future, we will add a third data provider, Load S3 HyperBEAM, facilitating temporal data storage 7.7x cheaper than AWS S3.
 
 ### Installation
 
@@ -45,6 +54,50 @@ const s3Client = new S3Client({
   * It looks similar to `load_acc_*******`
 * `https://s3.load.rs` is the endpoint for the S3 interface provided by Load -- [codebase](https://github.com/weaveVM/wvm-aws-sdk-s3)
 * `forcePathStyle` set to `true` is _always_ necessary.
+* (optional) use `"uploader-api": "turbo"` is the command metadata object to push the object data to Arweave via Turbo. Default is load0.
+
+#### JS Example for PutObjectCommandArweave
+
+```javascript
+import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
+
+async function uploadFile(bucketName) {
+  const key = "filename.turbo"; // The name (key) the file will be stored under (object name)
+  const fileContent = new Uint8Array([0, 1, 2, 3, 4]); // Example file content in bytes
+  const accessKeyId = process.env.LOAD_ACCESS_KEY;
+  const secretAccessKey = ""; /// meant to be empty
+
+  const s3Client = new S3Client({
+    region: "eu-west-2",
+    endpoint: "https://s3.load.rs",
+    credentials: {
+      accessKeyId: accessKeyId,
+      secretAccessKey: secretAccessKey,
+    },
+    forcePathStyle: true,
+  });
+
+  try {
+    const command = new PutObjectCommand({
+      Bucket: bucketName,
+      Key: key,
+      Body: fileContent,
+      Metadata: {
+        "uploader-api": "turbo", // to push object to Arweave
+      },
+    });
+
+    const result = await s3Client.send(command);
+    console.log("✅ File uploaded:", key);
+    console.log(result);
+    return result;
+  } catch (error) {
+    console.error("❌ Error uploading file:", error);
+  }
+}
+
+uploadFile("your-bucket-name");
+```
 
 ### Rust Examples
 
