@@ -29,9 +29,9 @@
   * [Deploying an ERC20](miscellaneous/deploying-an-erc20.md)
   * [load:// Data Protocol](miscellaneous/load-data-protocol.md)
 
-## Load Network Cloud Platform&#x20;
+## Load Cloud Platform&#x20;
 
-* [Cloud Platform (LNCP)](load-network-cloud-platform/cloud-platform-lncp.md)
+* [Cloud Platform (LCP)](load-network-cloud-platform/cloud-platform-lcp.md)
 * [Load S3 Protocol](load-network-cloud-platform/load-s3-protocol.md)
 * [load0 data layer](load-network-cloud-platform/load0-data-layer.md)
 
