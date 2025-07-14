@@ -18,7 +18,7 @@ Let's make it easy to get going with Load Network. In this doc, we'll go through
 
 ### Upload data
 
-#### As a non-developer: LNCP
+#### As a non-developer: Load Cloud Platform
 
 The easiest way to interface with Load Network storage capabilities is through the cloud web app: [cloud.load.network](https://cloud.load.network/)
 
@@ -135,7 +135,7 @@ The [Load S3 SDK](https://github.com/weaveVM/wvm-aws-sdk-s3) provides a 1:1 comp
 
 #### IPFS
 
-The [Load Network Cloud Platform](load-network-cloud-platform/cloud-platform-lncp.md) operates an IPFS node that settles the data back to Load Network.  By setting the network to `ipfs.rs`, you are practically using IPFS compatible data protocol on top of Load Network.
+The [Load Cloud Platform](load-network-cloud-platform/cloud-platform-lncp.md) operates an IPFS node that settles the data back to Load Network.  By setting the network to `ipfs.rs`, you are practically using IPFS compatible data protocol on top of Load Network.
 
 <figure><img src=".gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
 

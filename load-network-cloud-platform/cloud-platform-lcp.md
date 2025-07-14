@@ -1,8 +1,8 @@
 ---
-description: About Load Network Cloud Platform
+description: About Load Cloud Platform
 ---
 
-# Cloud Platform (LNCP)
+# Cloud Platform (LCP)
 
 <figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
@@ -10,7 +10,7 @@ Uploading data onchain shouldn’t be any more difficult than using Google Drive
 
 Users just want to put their data somewhere and forget about the upkeep. Developers just want a permanent reference to their data that resolves in any environment. Whichever you are, we built [cloud.load.network](http://cloud.load.network/) for you.
 
-The Load Network Cloud is an all-in-one tool to interact with various Load Network storage interfaces and pipelines: one UI, one API key, various integrations, with web2 UX.
+The Load Cloud Platform is an all-in-one tool to interact with various Load Network storage interfaces and pipelines: one UI, one API key, various integrations, with web2 UX.
 
 {% hint style="info" %}
 Using the API keys generated on cloud.load.network - you can access other features such as load0 and Load S3 storage.
@@ -26,10 +26,10 @@ In today’s web3 world, too many teams relies on third-party hosted-IPFS pinnin
 
 Other teams are already using battle-tested web3 native solutions such as Arweave and Filecoin, however these protocols lack the unification of a single cloud platform that lets developers use them like they’d use AWS S3. This creates engineering overhead for teams to integrate with web3 native solutions, keeping web3 devs in the web2 trap. We’re solving this with the Load Cloud.
 
-### Introducing Load Network Cloud Platform: Going Onchain
+### Introducing Load Cloud Platform: Going Onchain
 
 <figure><img src="../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
 As a response to the lack of web3 storage solution abstraction and interoperability with the web2 standard interfaces, we have worked on the Load Cloud, a one stop solution to use existing data storage standards, without compromising the core features of web3 data storage provided by Load Network.
 
-[Start using Load Network Cloud Platform today](https://cloud.load.network)
+[Start using Load Cloud Platform today](https://cloud.load.network)
