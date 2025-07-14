@@ -18,9 +18,9 @@ Let's make it easy to get going with Load Network. In this doc, we'll go through
 
 ### Upload data
 
-#### As a non-developer: LNCP
+#### As a non-developer: LCP
 
-The easiest way to interface with Load Network storage capabilities is through the cloud web app: [cloud.load.network](https://cloud.load.network/)
+The easiest way to interface with Load Network storage capabilities is through the cloud web app: [cloud.load.network](https://cloud.load.network/), Load Cloud Platform.
 
 <figure><img src=".gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
 
@@ -36,7 +36,7 @@ curl -X POST "https://load0.network/upload" \
      -H "Content-Type: video/mp4"
 ```
 
-For more examples, check out the [load0 documentation](load-network-cloud-platform/load0-data-layer.md)
+For more examples, check out the [load0 documentation](load-cloud-platform-lcp/load0-data-layer.md)
 
 #### Direct onchain data bundling
 
@@ -135,7 +135,7 @@ The [Load S3 SDK](https://github.com/weaveVM/wvm-aws-sdk-s3) provides a 1:1 comp
 
 #### IPFS
 
-The [Load Network Cloud Platform](load-network-cloud-platform/cloud-platform-lncp.md) operates an IPFS node that settles the data back to Load Network.  By setting the network to `ipfs.rs`, you are practically using IPFS compatible data protocol on top of Load Network.
+The [Load Network Cloud Platform](load-cloud-platform-lcp/cloud-platform-lcp.md) operates an IPFS node that settles the data back to Load Network.  By setting the network to `ipfs.rs`, you are practically using IPFS compatible data protocol on top of Load Network.
 
 <figure><img src=".gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
 

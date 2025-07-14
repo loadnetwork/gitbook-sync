@@ -1,8 +1,8 @@
 ---
-description: About Load Network Cloud Platform
+description: About Load Cloud Platform
 ---
 
-# Cloud Platform (LNCP)
+# Cloud Platform (LCP)
 
 <figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
@@ -10,7 +10,7 @@ Uploading data onchain shouldn’t be any more difficult than using Google Drive
 
 Users just want to put their data somewhere and forget about the upkeep. Developers just want a permanent reference to their data that resolves in any environment. Whichever you are, we built [cloud.load.network](http://cloud.load.network/) for you.
 
-The Load Network Cloud is an all-in-one tool to interact with various Load Network storage interfaces and pipelines: one UI, one API key, various integrations, with web2 UX.
+The Load Cloud is an all-in-one tool to interact with various Load Network storage interfaces and pipelines: one UI, one API key, various integrations, with web2 UX.
 
 {% hint style="info" %}
 Using the API keys generated on cloud.load.network - you can access other features such as load0 and Load S3 storage.

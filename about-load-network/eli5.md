@@ -46,11 +46,11 @@ For example, we released a technical guide for developers interested in deployin
 
 #### The Onchain Data Center
 
-Load network is being built with the vision of being the onchain data center. To accomplish this vision, we have started working on several web2 and web3 data pipelines into Load and Arweave, with web2 cloud experience. [Start using Load Cloud now](../load-network-cloud-platform/cloud-platform-lncp.md)!
+Load network is being built with the vision of being the onchain data center. To accomplish this vision, we have started working on several web2 and web3 data pipelines into Load and Arweave, with web2 cloud experience. [Start using Load Cloud now](../load-cloud-platform-lcp/cloud-platform-lcp.md)!
 
 ### Explore Load Network Ecosystem Dapps (Evolving)
 
-* [Load Network Cloud Platform](../load-network-cloud-platform/cloud-platform-lncp.md) —  The UI of the onchain data center
+* [Load Network Cloud Platform](../load-cloud-platform-lcp/cloud-platform-lcp.md) —  The UI of the onchain data center
 * [Permacast](https://permacast.app) —  A decentralized media platform on Load Network
 * [Tapestry Finance ](https://www.tapestry.fi/)— Uniswap V2 fork
 * [shortcuts.bot ](https://shortcuts.bot/)— short links for Load Network txids
