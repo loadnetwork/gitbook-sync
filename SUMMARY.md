@@ -21,14 +21,11 @@
   * [Load Network Bundler](using-load-network/evm-bundler/load-network-bundler.md)
   * [0xbabe2: Large Data Uploads](using-load-network/evm-bundler/0xbabe2-large-data-uploads.md)
   * [Bundlers Gateways](using-load-network/evm-bundler/bundlers-gateways.md)
-
-***
-
-* [Miscellaneous ](miscellaneous/README.md)
-  * [Self Hosted RPC Proxies](miscellaneous/self-hosted-rpc-proxies.md)
-  * [Deploying an ERC20](miscellaneous/deploying-an-erc20.md)
-  * [load:// Data Protocol](miscellaneous/load-data-protocol.md)
-  * [Arweave's ANS-104 Rust SDK](miscellaneous/arweaves-ans-104-rust-sdk.md)
+* [Miscellaneous ](using-load-network/miscellaneous/README.md)
+  * [Self Hosted RPC Proxies](using-load-network/miscellaneous/self-hosted-rpc-proxies.md)
+  * [Deploying an ERC20](using-load-network/miscellaneous/deploying-an-erc20.md)
+  * [load:// Data Protocol](using-load-network/miscellaneous/load-data-protocol.md)
+  * [Arweave's ANS-104 Rust SDK](using-load-network/miscellaneous/arweaves-ans-104-rust-sdk.md)
 
 ## Load Cloud Platform (LCP)
 
@@ -44,6 +41,7 @@
 * [\~riscv-em@1.0 device](load-hyperbeam/riscv-em-1.0-device.md)
 * [\~helios@1.0 device](load-hyperbeam/helios-1.0-device.md)
 * [\~quantum-rt@1.0 device](load-hyperbeam/quantum-rt-1.0-device.md)
+* [\~s3@1.0 device](load-hyperbeam/s3-1.0-device.md)
 
 ## Load Network for evm chains
 

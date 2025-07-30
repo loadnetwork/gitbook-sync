@@ -6,7 +6,7 @@ description: Tutoral on how to deploy an ERC20 on Load Network
 
 ### **Add Load Network Alphanet to MetaMask**
 
-Before deploying, make sure the Load Network network is configured in your MetaMask wallet. [Check the Network Configurations](../using-load-network/network-configurations.md).
+Before deploying, make sure the Load Network network is configured in your MetaMask wallet. [Check the Network Configurations](../network-configurations.md).
 
 ### ERC20 Contract
 
@@ -33,8 +33,8 @@ contract WeaveGM is ERC20 {
 
 Now that you have your contract source code ready, compile the contract and hit deploy with an initial supply.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>69420 LOADs because why not</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>69420 LOADs because why not</p></figcaption></figure>
 
 After deploying the contract successfully, check your EOA balance!
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption><p>Success!</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Success!</p></figcaption></figure>

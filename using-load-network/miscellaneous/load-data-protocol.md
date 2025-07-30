@@ -16,7 +16,7 @@ The data retrieval pipeline ensures that when you request data associated with a
 
 It then retrieves the transaction block from Arweave, published by LN ExExes, decodes the block (decompresses Brotli and deserializes Borsh), and scans the archived sealed block transactions within LN to locate the requested transaction ID, ultimately returning the calldata (input) associated with it.
 
-<figure><img src="../.gitbook/assets/wvm-req (2).png" alt=""><figcaption><p>workflow</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/wvm-req (2).png" alt=""><figcaption><p>workflow</p></figcaption></figure>
 
 ### Try it out
 
@@ -38,6 +38,6 @@ curl -X GET https://gateway.load.network/war-calldata/$LN_TXID
 
 The latency includes the time spent fetching data from LN EVM RPC and the Arweave gateway, as well as the processing time for Brotli decompression, Borsh deserialization, and data validity verification.
 
-<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption><p>/calldata endpoint benchmark</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption><p>/calldata endpoint benchmark</p></figcaption></figure>
 
 #### Check out the load:// data protocol protocol [here](https://github.com/weavevM/wvm-data-retriever)
