@@ -28,6 +28,7 @@
   * [Self Hosted RPC Proxies](miscellaneous/self-hosted-rpc-proxies.md)
   * [Deploying an ERC20](miscellaneous/deploying-an-erc20.md)
   * [load:// Data Protocol](miscellaneous/load-data-protocol.md)
+  * [Arweave's ANS-104 Rust SDK](miscellaneous/arweaves-ans-104-rust-sdk.md)
 
 ## Load Cloud Platform (LCP)
 
