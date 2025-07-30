@@ -16,7 +16,7 @@ Each HyperBEAM node is configured using the `~meta@1.0` device, which provides a
 
 ### load\_hb: Load Network HyperBEAM node with custom devices
 
-The [load\_hb](https://github.com/loadnetwork/load_hb) repository is our HyperBEAM fork with custom devices such as [\~evm@1.0](evm-1.0-device.md), [\~kem@1.0](../kem-1.0-device.md), and [\~riscv-em@1.0](../riscv-em-1.0-device.md)
+The [load\_hb](https://github.com/loadnetwork/load_hb) repository is our HyperBEAM fork with custom devices such as [\~evm@1.0](evm-1.0-device.md), [\~kem@1.0](kem-1.0-device.md), and [\~riscv-em@1.0](riscv-em-1.0-device.md)
 
 Our development motto is driven by the [Hyperbeam Accelerationism (hb/acc) ](https://blog.decent.land/hb-acc/)manifesto initiated during Arweave Day Berlin 2025.
 
