@@ -22,9 +22,13 @@ Let's make it easy to get going with Load Network. In this doc, we'll go through
 
 The easiest way to interface with Load Network storage capabilities is through the cloud web app: [cloud.load.network](https://cloud.load.network/), Load Cloud Platform.
 
-<figure><img src=".gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 #### As a developer
+
+#### Load S3 Temporal Data Storage Layer
+
+The best data pipeline for massive uploads is to use the Load [\~s3@1.0 HyperBEAM](load-cloud-platform-lcp/load-s3-layer.md) device that creates S3 objects serialized as ANS-104 DataItems, maintaining provenance and integrity when the uploader wishes to move the S3 object from the temporal storage layer to Arweave in a single HTTP API request.&#x20;
 
 #### Highly scalable bundling service
 
@@ -129,15 +133,9 @@ Work with us to use Load DA for your chain - get onboarded [here](https://calend
 
 If your data is already on another storage layer like IPFS, Filecoin, Swarm or AWS S3, you can use specialized importer tools to migrate.
 
-#### AWS S3
+#### Load S3 Storage Layer
 
-The [Load S3 SDK](https://github.com/weaveVM/wvm-aws-sdk-s3) provides a 1:1 compatible development interface for applications using AWS S3 for storage, keeping method names and parameters in tact so the only change should be one line: the `import` .
-
-#### IPFS
-
-The [Load Network Cloud Platform](load-cloud-platform-lcp/cloud-platform-lcp.md) operates an IPFS node that settles the data back to Load Network.  By setting the network to `ipfs.rs`, you are practically using IPFS compatible data protocol on top of Load Network.
-
-<figure><img src=".gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+The [HyperBEAM Load S3 node](load-cloud-platform-lcp/load-s3-layer.md) provides a 1:1 compatible development interface for applications using AWS S3 for storage, keeping method names and parameters in tact so the only change should be one line: the endpoint.
 
 #### Filecoin&#x20;
 
