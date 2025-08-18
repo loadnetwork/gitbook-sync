@@ -36,7 +36,7 @@ curl -X POST "https://load0.network/upload" \
      -H "Content-Type: video/mp4"
 ```
 
-For more examples, check out the [load0 documentation](load-cloud-platform-lcp/load0-data-layer.md)
+For more examples, check out the [load0 documentation](using-load-network/miscellaneous/load0-data-layer.md)
 
 #### Direct onchain data bundling
 

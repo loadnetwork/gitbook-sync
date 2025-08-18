@@ -26,12 +26,12 @@
   * [Deploying an ERC20](using-load-network/miscellaneous/deploying-an-erc20.md)
   * [load:// Data Protocol](using-load-network/miscellaneous/load-data-protocol.md)
   * [Arweave's ANS-104 Rust SDK](using-load-network/miscellaneous/arweaves-ans-104-rust-sdk.md)
+  * [load0 data layer](using-load-network/miscellaneous/load0-data-layer.md)
 
 ## Load Cloud Platform (LCP)
 
 * [Cloud Platform (LCP)](load-cloud-platform-lcp/cloud-platform-lcp.md)
-* [Load S3 Protocol](load-cloud-platform-lcp/load-s3-protocol.md)
-* [load0 data layer](load-cloud-platform-lcp/load0-data-layer.md)
+* [Load S3 Layer](load-cloud-platform-lcp/load-s3-layer.md)
 
 ## load hyperbeam
 

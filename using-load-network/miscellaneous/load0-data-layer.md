@@ -16,7 +16,7 @@ First, the user sends data to the load0 REST API `/upload` endpoint -- the data 
 
 After being added to the load0 bucket, the object gets added to the orchestrator queue that uploads the optimistic cached objects to Load Network. Using Large Bundle & SuperAccount, the S3 bucket objects get sequentially uploaded to Load and therefore, permanently stored while maintaining very fast uploads and downloads. _Object size limit: 1 byte -> 2GB_.
 
-<figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption><p>tx lifecycle</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption><p>tx lifecycle</p></figcaption></figure>
 
 ### REST API
 
