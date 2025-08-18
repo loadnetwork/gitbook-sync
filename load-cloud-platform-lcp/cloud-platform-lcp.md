@@ -26,10 +26,16 @@ In today’s web3 world, too many teams relies on third-party hosted-IPFS pinnin
 
 Other teams are already using battle-tested web3 native solutions such as Arweave and Filecoin, however these protocols lack the unification of a single cloud platform that lets developers use them like they’d use AWS S3. This creates engineering overhead for teams to integrate with web3 native solutions, keeping web3 devs in the web2 trap. We’re solving this with the Load Cloud.
 
-### Introducing Load Network Cloud Platform: Going Onchain
+### Load Network Cloud Platform: Going Onchain
 
-<figure><img src="../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 As a response to the lack of web3 storage solution abstraction and interoperability with the web2 standard interfaces, we have worked on the Load Cloud, a one stop solution to use existing data storage standards, without compromising the core features of web3 data storage provided by Load Network.
+
+### Start Using LCP Today
+
+Today you can use the LCP platform to create buckets, folders and temporarily store data in object-storage format. The LCP uses Load's S3 HyperBEAM data storage layer for hotcache storage.
+
+Objects are stored as ANS-104 DataItems, therefore, once the object is posted to Arweave from Load S3, it maintains properties integrity (signature, ID, owner, provenance).
 
 [Start using Load Network Cloud Platform today](https://cloud.load.network)

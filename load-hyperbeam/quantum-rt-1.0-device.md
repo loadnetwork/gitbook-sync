@@ -57,7 +57,7 @@ fn compute(
 
 The compute() function takes 3 inputs: the number of qubits to initialize, a function ID from the serverless registry, and a list of qubit indices to measure. It returns a HashMap containing the measurement results.
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>execution flow</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>execution flow</p></figcaption></figure>
 
 ### Device API Examples
 

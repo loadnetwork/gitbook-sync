@@ -36,12 +36,12 @@
 ## load hyperbeam
 
 * [About Load HyperBEAM](load-hyperbeam/about-load-hyperbeam.md)
+* [\~s3@1.0 device](load-hyperbeam/s3-1.0-device.md)
 * [\~evm@1.0 device](load-hyperbeam/evm-1.0-device.md)
 * [\~kem@1.0 device](load-hyperbeam/kem-1.0-device.md)
 * [\~riscv-em@1.0 device](load-hyperbeam/riscv-em-1.0-device.md)
 * [\~helios@1.0 device](load-hyperbeam/helios-1.0-device.md)
 * [\~quantum-rt@1.0 device](load-hyperbeam/quantum-rt-1.0-device.md)
-* [\~s3@1.0 device](load-hyperbeam/s3-1.0-device.md)
 
 ## Load Network for evm chains
 
