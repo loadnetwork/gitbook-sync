@@ -96,7 +96,7 @@ fn main(@builtin(global_invocation_id) global_id: vec3<u32>) {
 
 Using the image glitcher kernel function - [source code](https://github.com/loadnetwork/load_hb/blob/main/native/kernel_em_nif/src/kernels/glitch-berlin.wgsl)
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>original image</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>original image</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>glitched via the kernel function - minted as AO NFT on Bazar <a href="https://bazar.arweave.net/#/asset/0z8MNwaRpkXhEgIxUv8ESNhtHxVGNfFkmGkoPtu0amY">https://bazar.arweave.net/#/asset/0z8MNwaRpkXhEgIxUv8ESNhtHxVGNfFkmGkoPtu0amY</a></p></figcaption></figure>
 

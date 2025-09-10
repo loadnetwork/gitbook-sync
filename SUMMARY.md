@@ -33,10 +33,10 @@
 * [Cloud Platform (LCP)](load-cloud-platform-lcp/cloud-platform-lcp.md)
 * [Load S3 Layer](load-cloud-platform-lcp/load-s3-layer.md)
 
-***
+## storage agents
 
-* [STORAGE AGENTS](storage-agents/README.md)
-  * [Load S3 Storage Agents](storage-agents/load-s3-storage-agents.md)
+* [Load S3 Agentic Storage](storage-agents/load-s3-agentic-storage.md)
+* [Load S3 Agent](storage-agents/load-s3-agent.md)
 
 ## load hyperbeam
 

@@ -28,7 +28,7 @@ Other teams are already using battle-tested web3 native solutions such as Arweav
 
 ### Load Network Cloud Platform: Going Onchain
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 As a response to the lack of web3 storage solution abstraction and interoperability with the web2 standard interfaces, we have worked on the Load Cloud, a one stop solution to use existing data storage standards, without compromising the core features of web3 data storage provided by Load Network.
 
