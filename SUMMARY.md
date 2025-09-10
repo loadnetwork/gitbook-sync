@@ -37,6 +37,7 @@
 
 * [Load S3 Agentic Storage](storage-agents/load-s3-agentic-storage.md)
 * [Load S3 Agent](storage-agents/load-s3-agent.md)
+* [Blobscan Agent](storage-agents/blobscan-agent.md)
 
 ## load hyperbeam
 
