@@ -42,9 +42,24 @@ In the current release, Load S3 is a storage layer consisting of a single centra
 
 This early-stage testing layer offers similar trust assumptions offered by other centralized services in the Arweave ecosystem such as ANS-104 Bundlers. Load S3’s gradual evolution from a layer to decentralized network built on top of ao network will remove the centralized and trust-based components, one by one, to reach a trustless, verifiable and incentivized temporal data storage network.
 
+### Blazingly Fast ANS-104 DataItems streaming sidecar
+
+Besides the Hybrid Gateway, nodes like `s3-node-1` support a highly optimized low-level dataitems streaming leveraging precomputed dataitem data start-byte offset and range streaming from the S3 cluster directly.
+
+The sidecar bypasses the technical need to deserialize the dataitem in order to extract useful information such as tags and dataitem's data, reducing dramatically the latency for resolving.
+
+On `s3-node-1` — the sidecar is available under `https://gateway.s3-node-1.load.network/resolve/:offchain-dataitemid`&#x20;
+
 ### Developer Guide
 
 Load’s HyperBEAM node running the \~s3@1.0 device is available the following endpoint: [https://s3-node-0.load.network](https://s3-node-0.load.network/) – developers looking to use the HyperBEAM node as S3 endpoint, can use the official S3 SDKs as long as the used S3 commands are supported by `~s3@1.0`
+
+#### Available Endpoints
+
+| Node Name | Endpoint                                                           | Features                                                                                                                             |
+| --------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| S3 Node 0 | [https://s3-node-0.load.network ](https://s3-node-0.load.network/) | <ul><li>ao compute with offchain dataitems</li><li>Hybrid Gateway</li></ul>                                                          |
+| S3 Node 1 | [https://s3-node-1.load](https://s3-node-1.load/)                  | <ul><li>untouched ao compute (canonical)</li><li>Blazingly fast ANS-104 dataitems streaming from S3</li><li>Hybrid Gateway</li></ul> |
 
 #### Installation
 
