@@ -49,7 +49,7 @@ However, if you prefer to directly settle your data onchain via the EVM bundles 
 The recommended testnet bundling service endpoints are:
 
 * [upload.onchain.rs](https://upload.onchain.rs) (upload)
-* [resolver.bot](https://resolver.bot) (retrieve)
+* [gateway.load.rs](https://gateway.load.rs/) (retrieve)
 
 Instantiate an uploader in the [bundler-upload-sdk](https://github.com/weaveVM/bundler-upload-sdk) using this endpoint and the public testnet API key:
 
@@ -81,7 +81,7 @@ async function main() {
         }
       }
     ]);
-    console.log(`https://resolver.bot/bundle/${txHash}/0`);
+    console.log(`https://gateway.load.rs/bundle/${txHash}/0`);
   } catch (error) {
     console.error('Upload failed:', error.message);
     process.exit(1);
