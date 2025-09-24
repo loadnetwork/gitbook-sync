@@ -44,7 +44,7 @@ In the [diagrams & benchmarks here](https://github.com/weaveVM/wvm-research), we
 
 At the time of writing, and since the data protocol's inception, Load Network Arweave ExEx is the largest data protocol on top of Arweave in terms of the number of settled dataitems.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The Load Network interface with Arweave with more than just block data settling. We have developed the first precompiles that achieve a native **bidirectional data pipeline** with the Arweave network. In other words, with these precompiles (currently supported by Load Network testnet), you can read data from Arweave and send data to Arweave trustlessly and natively from a Solidity smart contract, creating the first ever programmable scalable EVM data, backed with Arweave permanence. [Learn more about Load Network precompiles in this section.](../using-load-network/supported-precompiles.md)\
 

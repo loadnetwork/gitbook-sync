@@ -4,7 +4,7 @@ description: Load Network custom HyperBEAM devices
 
 # About Load HyperBEAM
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>hb.load.rs</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>hb.load.rs</p></figcaption></figure>
 
 ### About HyperBEAM
 
