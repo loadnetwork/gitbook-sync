@@ -28,7 +28,9 @@ The \~s3@1.0 device has been designed with a built-in data protocol to natively 
 
 ### Hybrid Gateway
 
-
+{% hint style="success" %}
+For a direct -low level- ANS-104 DataItem's data streaming from LS3, use the HyperBEAM [sidecar](https://app.gitbook.com/u/9f5jQHFG1jWXf1Txd6jCIxFWKHD2) gateway instead — access the offchain dataitem under: [https://gateway.s3-node-1.load.network/resolve/:dataitem\_id](https://gateway.s3-node-1.load.network/resolve/:dataitem_id)
+{% endhint %}
 
 Given the S3 device’s native integration with objects serialized and stored as ANS-104 DataItems, we considered DataItem accessibility, such as resolving via Arweave gateways.
 
@@ -39,6 +41,10 @@ Additionally, `hb_opts.erl` Stores orders have been modified to add s3 offchain 
 Building these extension components, a hb node running the \~[s3@1.0](mailto:s3@1.0) device, benefit from the Hybrid Gateway that can resolve both onchain and offchain dataitems.
 
 #### Load S3 Trust Assumptions, Optimismo
+
+{% hint style="success" %}
+For a higher level trust assumption, upload data to LS3 using the Turbo-compliant [upload service ](turbo-offchain-upload-service.md)which comes with a built-in system of signed receipts
+{% endhint %}
 
 In the current release, Load S3 is a storage layer consisting of a single centralized yet verifiable storage provider (HyperBEAM node running the \~s3@1.0 device components).
 
@@ -58,10 +64,10 @@ Load’s HyperBEAM node running the \~s3@1.0 device is available the following e
 
 #### Available Endpoints
 
-| Node Name | Endpoint                                                           | Features                                                                                                                             |
-| --------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
-| S3 Node 0 | [https://s3-node-0.load.network ](https://s3-node-0.load.network/) | <ul><li>ao compute with offchain dataitems</li><li>Hybrid Gateway</li></ul>                                                          |
-| S3 Node 1 | [https://s3-node-1.load](https://s3-node-1.load/)                  | <ul><li>untouched ao compute (canonical)</li><li>Blazingly fast ANS-104 dataitems streaming from S3</li><li>Hybrid Gateway</li></ul> |
+| Node Name | Endpoint                                                           | Features                                                                                                                                                                                        |
+| --------- | ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| S3 Node 0 | [https://s3-node-0.load.network ](https://s3-node-0.load.network/) | <ul><li>ao compute with offchain dataitems</li><li>Hybrid Gateway</li></ul>                                                                                                                     |
+| S3 Node 1 | [https://s3-node-1.load](https://s3-node-1.load/)                  | <ul><li>untouched ao compute (canonical)</li><li>Blazingly fast ANS-104 dataitems streaming from S3</li><li>Hybrid Gateway</li><li>Powers LCP, Turbo upload service and load-s3-agent</li></ul> |
 
 #### Installation
 
@@ -134,4 +140,4 @@ pub async fn s3_create_bucket() -> Result<(), SdkError<CreateBucketError>> {
 }
 ```
 
-If you wish to beta get access, reach out to us on [Telegram](https://t.me/loadnetwork) – for more documentation on the \~s3@1.0 device, check the [device documentation](../load-hyperbeam/s3-1.0-device.md).
+For higher performance, use LS3 along the load balanced HyperBEAM S3 cluster - [check docs](ls3-with-load_acc.md)
