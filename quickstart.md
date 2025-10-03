@@ -12,6 +12,7 @@ To easily feed Load Network docs to your favourite LLM, access the compressed kn
 Let's make it easy to get going with Load Network. In this doc, we'll go through the simplest ways to use Load across the most common use cases:
 
 * [Uploading data](quickstart.md#upload-data)
+* [Using ARIO's Turbo SDK](quickstart.md#using-arios-turbo-sdk)
 * [Integrating ledger storage](quickstart.md#integrating-ledger-storage)
 * [Using Load DA](quickstart.md#using-load-da)
 * [Migrate from another storage layer](quickstart.md#migrate-from-another-storage-layer)
@@ -20,19 +21,19 @@ Let's make it easy to get going with Load Network. In this doc, we'll go through
 
 #### As a non-developer: LCP
 
-The easiest way to interface with Load Network storage capabilities is through the cloud web app: [cloud.load.network](https://cloud.load.network/), Load Cloud Platform.
+The easiest way to interface with Load Network storage capabilities is through the cloud web app: [cloud.load.network](https://cloud.load.network/), Load Cloud Platform. The LCP platform is powered by HyperBEAM's LS3 storage layer and offer programmatic access through load\_acc API keys.&#x20;
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 #### As a developer
 
-#### Load S3 Temporal Data Storage Layer
+#### Load S3 Temporary Data Storage Layer (highly recommended)&#x20;
 
-The best data pipeline for massive uploads is to use the Load [\~s3@1.0 HyperBEAM](load-cloud-platform-lcp/load-s3-layer-ls3.md) device that creates S3 objects serialized as ANS-104 DataItems, maintaining provenance and integrity when the uploader wishes to move the S3 object from the temporal storage layer to Arweave in a single HTTP API request.&#x20;
+The best data pipeline for massive uploads is to use the Load \~s3@1.0 HyperBEAM powered [storage layer](load-cloud-platform-lcp/load-s3-layer-ls3.md). The LS3 storage layer, run through a special set of HyperBEAM nodes, have the S3 objects serialized as ANS-104 DataItems by default, maintaining provenance and integrity when the uploader wishes to move the S3 object from the temporal storage layer to Arweave in a single [HTTP API request](storage-agents/load-s3-agent.md).&#x20;
 
 #### Highly scalable bundling service
 
-To load huge amount of data to Load Network without being tied to the technical network limitations (tx size, block size, network throughput), you can use the load0 bundling service. It's a straightforward REST-based bundling service that let you upload data and retrieve it instantly, at scale:
+To load huge amount of data to Load Network EVM L1 without being tied to the technical network limitations (tx size, block size, network throughput), you can use the load0 bundling service. It's a straightforward REST-based bundling service that let you upload data and retrieve it instantly, at scale:
 
 ```bash
 curl -X POST "https://load0.network/upload" \
@@ -42,67 +43,9 @@ curl -X POST "https://load0.network/upload" \
 
 For more examples, check out the [load0 documentation](using-load-network/miscellaneous/load0-data-layer.md)
 
-#### Direct onchain data bundling
+### Using ARIO's Turbo SDK
 
-However, if you prefer to directly settle your data onchain via the EVM bundles transaction format (0xbabe), the easiest way to do it is to use an 0xbabe2 bundling service.
-
-The recommended testnet bundling service endpoints are:
-
-* [upload.onchain.rs](https://upload.onchain.rs) (upload)
-* [gateway.load.rs](https://gateway.load.rs/) (retrieve)
-
-Instantiate an uploader in the [bundler-upload-sdk](https://github.com/weaveVM/bundler-upload-sdk) using this endpoint and the public testnet API key:
-
-```bash
-API_KEY=d025e132382aea412f4256049c13d0e92d5c64095d1c88e1f5de7652966b69af
-```
-
-{% hint style="warning" %}
-Limits are in place for the public testnet bundler. For production use at scale, we recommend running your own bundling service as explained [here](https://github.com/weaveVM/bundler), or [get in touch](https://calendly.com/decentlandlabs/founders-chat)
-{% endhint %}
-
-#### Full upload example
-
-```javascript
-import { BundlerSDK } from 'bundler-upload-sdk';
-import { readFile } from 'fs/promises';
-import 'dotenv/config';
-
-const bundler = new BundlerSDK('https://upload.onchain.rs/', process.env.API_KEY);
-
-async function main() {
-  try {
-    const fileBuffer = await readFile('files/hearts.gif');
-    const txHash = await bundler.upload([
-      {
-        file: fileBuffer,
-        tags: {
-          'content-type': 'image/gif',
-        }
-      }
-    ]);
-    console.log(`https://gateway.load.rs/bundle/${txHash}/0`);
-  } catch (error) {
-    console.error('Upload failed:', error.message);
-    process.exit(1);
-  }
-}
-
-main().catch(error => {
-  console.error('Unhandled error:', error);
-  process.exit(1);
-});
-```
-
-...Or [clone this example repo](https://github.com/weaveVM/bundler-upload-example) to avoid copy-pasting.
-
-#### Want to build your own 0xbabe2 bundling service?
-
-The above example demonstrates posting data in a single Load Network base layer tx. This is limited by Load's blocksize, so tops out at about 8mb.
-
-For practically unlimited onchain upload sizes, you can use the large bundles spec to submit data in chunks. Chunks can even be uploaded in parallel, making large bundles a performant way to handle big uploads.
-
-The [Rust Bundler SDK](https://github.com/weaveVM/bundler?tab=readme-ov-file#0xbabe2-large-bundle) makes it possible for developers to spin up their own bundling services with support for large bundles.
+One of the coolest features offered by the LS3 layer's compatibility with the ANS-104 data standard is the out-of-the-box compatibility with the Arweave ecosystem despite being an offchain temporary storage layer. For that reason, we have built an ANS-104 upload service on top of LS3, compatible with ARIO's Turbo standard, meaning you can use the Turbo official SDK along with Load's custom upload service endpoint to store temporary Arweave dataitems. [check out how to use it ](load-cloud-platform-lcp/turbo-offchain-upload-service.md) and learn more about `xANS-104` data provenance, lineage and governance [here](https://blog.load.network/xans-104/).
 
 ### Integrating ledger storage
 

@@ -10,11 +10,11 @@ As of October 1st, 2025, it's no longer required to directly contact us to acqui
 
 First, you have to create a bucket from the cloud.load.network dashboard if the bucket you want to create scoped keys for does not already exist.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 After creating the bucket, navigate to the "API Keys" tab and create a new load\_acc key with a label, then scope it to the desired bucket.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### load\_acc in action
 

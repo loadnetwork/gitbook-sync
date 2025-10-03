@@ -46,7 +46,7 @@ _How can I access my data without necessarily encrypting it and storing the encr
 
 #### Private DataItems
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Private ANS-104 Dataitems are possible today through the introduction of private buckets along load\_acc gated JWT tokens. Before private dataitems, all of Load S3 dataitems were public, and stored according to the \`offchain-dataitems\` data protocol. However, as of today, any LCP user can:
 
