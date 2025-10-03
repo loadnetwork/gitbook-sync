@@ -6,7 +6,7 @@ icon: bolt
 # Quickstart
 
 {% hint style="info" %}
-To easily feed Load Network docs to your favourite LLM, access the compressed knowledge (aka LLM.txt) file from Load Network: [https://www.llmtxt.xyz/g/loadnetwork/gitbook-sync/10](https://www.llmtxt.xyz/g/loadnetwork/gitbook-sync/10) (last update: 24/09/2025, 17:49:08 UTC)
+To easily feed Load Network docs to your favourite LLM, access the compressed knowledge (aka LLM.txt) file from Load Network: https://www.llmtxt.xyz/g/loadnetwork/gitbook-sync/11 (last update: 01/10/2025, 17:49:08 UTC)
 {% endhint %}
 
 Let's make it easy to get going with Load Network. In this doc, we'll go through the simplest ways to use Load across the most common use cases:
@@ -22,7 +22,7 @@ Let's make it easy to get going with Load Network. In this doc, we'll go through
 
 The easiest way to interface with Load Network storage capabilities is through the cloud web app: [cloud.load.network](https://cloud.load.network/), Load Cloud Platform.
 
-<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### As a developer
 

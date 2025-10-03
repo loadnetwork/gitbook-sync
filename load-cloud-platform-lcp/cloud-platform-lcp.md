@@ -30,7 +30,7 @@ The V2 release of the Load Cloud Platform (LCP) introduces several, highly-reque
 
 ### The foundation: a universal API key system for Load <a href="#the-foundation-a-universal-api-key-system-for-load" id="the-foundation-a-universal-api-key-system-for-load"></a>
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 V2 introduces the concept of Load accounts and load\_acc API keys. A unified auth layer finally enables us to provision scoped access to Load’s HyperBEAM S3 layer and build access control for data.
 
@@ -46,7 +46,7 @@ _How can I access my data without necessarily encrypting it and storing the encr
 
 #### Private DataItems
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Private ANS-104 Dataitems are possible today through the introduction of private buckets along load\_acc gated JWT tokens. Before private dataitems, all of Load S3 dataitems were public, and stored according to the \`offchain-dataitems\` data protocol. However, as of today, any LCP user can:
 
