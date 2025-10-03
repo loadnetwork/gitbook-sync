@@ -6,7 +6,7 @@ icon: bolt
 # Quickstart
 
 {% hint style="info" %}
-To easily feed Load Network docs to your favourite LLM, access the compressed knowledge (aka LLM.txt) file from Load Network: https://www.llmtxt.xyz/g/loadnetwork/gitbook-sync/11 (last update: 01/10/2025, 17:49:08 UTC)
+To easily feed Load Network docs to your favourite LLM, access the compressed knowledge (aka LLM.txt) file from Load Network: [https://www.llmtxt.xyz/g/loadnetwork/gitbook-sync/11](https://www.llmtxt.xyz/g/loadnetwork/gitbook-sync/11) (last update: 01/10/2025, 09:44:07 UTC)
 {% endhint %}
 
 Let's make it easy to get going with Load Network. In this doc, we'll go through the simplest ways to use Load across the most common use cases:
@@ -28,7 +28,7 @@ The easiest way to interface with Load Network storage capabilities is through t
 
 #### Load S3 Temporal Data Storage Layer
 
-The best data pipeline for massive uploads is to use the Load [\~s3@1.0 HyperBEAM](load-cloud-platform-lcp/load-s3-layer.md) device that creates S3 objects serialized as ANS-104 DataItems, maintaining provenance and integrity when the uploader wishes to move the S3 object from the temporal storage layer to Arweave in a single HTTP API request.&#x20;
+The best data pipeline for massive uploads is to use the Load [\~s3@1.0 HyperBEAM](load-cloud-platform-lcp/load-s3-layer-ls3.md) device that creates S3 objects serialized as ANS-104 DataItems, maintaining provenance and integrity when the uploader wishes to move the S3 object from the temporal storage layer to Arweave in a single HTTP API request.&#x20;
 
 #### Highly scalable bundling service
 
@@ -135,7 +135,7 @@ If your data is already on another storage layer like IPFS, Filecoin, Swarm or A
 
 #### Load S3 Storage Layer
 
-The [HyperBEAM Load S3 node](load-cloud-platform-lcp/load-s3-layer.md) provides a 1:1 compatible development interface for applications using AWS S3 for storage, keeping method names and parameters in tact so the only change should be one line: the endpoint.
+The [HyperBEAM Load S3 node](load-cloud-platform-lcp/load-s3-layer-ls3.md) provides a 1:1 compatible development interface for applications using AWS S3 for storage, keeping method names and parameters in tact so the only change should be one line: the endpoint.
 
 #### Filecoin&#x20;
 

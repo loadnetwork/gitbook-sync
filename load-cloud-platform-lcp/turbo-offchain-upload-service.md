@@ -6,7 +6,7 @@ description: Learn about the ARIO's Turbo-compliant offchain upload service
 
 ### About
 
-The [loaded-turbo-api](https://github.com/loadnetwork/loaded-turbo-api) is  the first [Turbo](https://turbo.ar.io/)-compliant, offchain, s3-based, on HyperBEAM upload service. With this new upload service, Turbo and the broader Arweave ecosystem users can start using [Load S3 ](load-s3-layer.md)temporary storage directly via the official Turbo SDK: a simple -one line- endpoint change.
+The [loaded-turbo-api](https://github.com/loadnetwork/loaded-turbo-api) is  the first [Turbo](https://turbo.ar.io/)-compliant, offchain, s3-based, on HyperBEAM upload service. With this new upload service, Turbo and the broader Arweave ecosystem users can start using [Load S3 ](load-s3-layer-ls3.md)temporary storage directly via the official Turbo SDK: a simple -one line- endpoint change.
 
 Thanks to the Turbo SDK’s clear open standards, it was possible to develop a layer on top Load S3 that acts as a upload service that inherits the storage features of Load S3, while maintaining interoperability and integrity with Arweave’s ANS-104 data standard. Load’s upload service inherits the [SLA](https://arweave.net/ZKpbKFbF-F-Yu3Dk9_YCY3klp20PNgBa7JGFtqTYeWs) offered by the Load S3 client.
 

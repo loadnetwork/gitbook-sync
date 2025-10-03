@@ -31,7 +31,7 @@
 ## Load Cloud Platform (LCP)
 
 * [Cloud Platform (LCP)](load-cloud-platform-lcp/cloud-platform-lcp.md)
-* [Load S3 Layer](load-cloud-platform-lcp/load-s3-layer.md)
+* [Load S3 Layer (LS3)](load-cloud-platform-lcp/load-s3-layer-ls3.md)
 * [Turbo Offchain Upload Service](load-cloud-platform-lcp/turbo-offchain-upload-service.md)
 * [LS3 with load\_acc](load-cloud-platform-lcp/ls3-with-load_acc.md)
 
