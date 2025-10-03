@@ -2,7 +2,7 @@
 description: Explore the first temporal data storage layer on AO HyperBEAM
 ---
 
-# Load S3 Layer
+# Load S3 Layer (LS3)
 
 ### About
 
@@ -10,8 +10,8 @@ The Load S3 storage layer is built on top of HyperBEAM as a device, and ao netwo
 
 The HyperBEAM S3 device offers maximum flexibility for HyperBEAM node operators, allowing them to either spin up MinIO clusters in the same location as the HyperBEAM node and rent their available storage, or connect to existing external clusters, offering native integration between hb’s s3 and devs existing storage clusters. For instance, Load’s S3 device is co-located with the MinIO clusters.
 
-{% hint style="info" %}
-The beta release for Load S3, an object-storage temporal data storage layer with \~300TB of storage space available to be rented.
+{% hint style="success" %}
+To start using the Load S3 temporary storage layer today, checkout the LCP, LS3 with load\_acc and the Turbo upload service sections
 {% endhint %}
 
 ### Erasure-coded redundancy, fault tolerance, and data availability
@@ -24,9 +24,11 @@ The Load S3 layer inherits these guarantees by offloading them to a battle-teste
 
 ### \~s3@1.0 & ANS-104 DataItems
 
-The \~s3@1.0 device has been designed with a built-in data protocol to natively handle ANS-104 DataItems offchain temporary storage. This approach translates our rationale: HyperBEAM s3 nodes can store signed & valid ANS-104 DataItems temporarily, that can be pushed anytime, when needed, to Arweave, while maintaining the DataItem’s provenance and determinism (e.g. ID, signature, timestamp, etc).
+The \~s3@1.0 device has been designed with a built-in data protocol to natively handle ANS-104 DataItems offchain temporary storage. This approach translates our rationale: HyperBEAM s3 nodes can store signed & valid ANS-104 DataItems temporarily, that can be pushed anytime, when needed, to Arweave, while maintaining the DataItem’s provenance and determinism (e.g. ID, signature, timestamp, etc). Learn more about [xANS-104](https://blog.load.network/xans-104/) data provenance, lineage and governance here.
 
 ### Hybrid Gateway
+
+
 
 Given the S3 device’s native integration with objects serialized and stored as ANS-104 DataItems, we considered DataItem accessibility, such as resolving via Arweave gateways.
 
