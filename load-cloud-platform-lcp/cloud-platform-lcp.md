@@ -32,7 +32,7 @@ The V2 release of the Load Cloud Platform (LCP) introduces several, highly-reque
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-V2 introduces the concept of Load accounts and load\_acc API keys. A unified auth layer finally enables us to provision scoped access to Load’s HyperBEAM S3 layer and build access control for data.
+V2 introduces the concept of Load accounts and [load\_acc](ls3-with-load_acc.md) API keys. A unified auth layer finally enables us to provision scoped access to Load’s HyperBEAM S3 layer and build access control for data.
 
 Under the hood, Load Cloud email login uses [Magic](http://magic.link/) to create an EVM wallet. This wallet’s keys have access to the Load authentication API and generate keys in the dashboard that can read and write from S3.
 
