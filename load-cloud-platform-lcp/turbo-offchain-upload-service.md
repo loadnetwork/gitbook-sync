@@ -202,6 +202,6 @@ Check out the upload service v1.0.0 release [here](https://github.com/loadnetwor
 
 This Turbo-compliant upload service, along the load-s3-agent, form the main 2 data objects ingress as ANS-104 DataItems.
 
-The main difference between load-s3-agent and Turbo-SDK is access control. Uploading data via Turbo SDK default to the `offchain-dataitems` data protocol where all uploaded data items sit in the protocol’s public bucket, while using the load s3 agent, it’s possible to upload object -dataitems- to [private buckets](https://github.com/loadnetwork/load-s3-agent?tab=readme-ov-file#upload-data-and-return-an-agent-private-signed-dataitem) and control the access and have expireable shareable download links.
+The main difference between [load-s3-agent](../storage-agents/load-s3-agent.md) and Turbo-SDK is access control. Uploading data via Turbo SDK default to the `offchain-dataitems` data protocol where all uploaded data items sit in the protocol’s public bucket, while using the load s3 agent, it’s possible to upload object -dataitems- to [private buckets](https://github.com/loadnetwork/load-s3-agent?tab=readme-ov-file#upload-data-and-return-an-agent-private-signed-dataitem) and control the access and have expireable shareable download links.
 
 However in both cases, the outcome is equal: ANS-104 formatted S3 objects along its data provenance guarantees and Arweave alignment.
