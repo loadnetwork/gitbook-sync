@@ -10,9 +10,9 @@ The x402 protocol is an open framework that enables machine-to-machine payments 
 
 This protocol allows automated agents, crawlers, and digital services to conduct transactions programmatically without requiring traditional accounts, subscriptions, or API keys. By creating a common language for web-based payments, x402 enables new monetization models such as pay-per-use access, micropayments for AI agents purchasing from multiple merchants, and flexible payment schemes including immediate settlement via stablecoins or deferred settlement through traditional payment rails like credit cards and bank accounts.
 
-### What is the x402 foundation?
-
+{% hint style="info" %}
 [The x402 Foundation](https://app.gitbook.com/u/9f5jQHFG1jWXf1Txd6jCIxFWKHD2) is a collaborative initiative being established by Cloudflare and Coinbase with the mission of encouraging widespread adoption of the x402 protocol.
+{% endhint %}
 
 ### x402 and xANS-104 DataItems
 
