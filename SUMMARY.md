@@ -34,6 +34,7 @@
 * [Load S3 Layer (LS3)](load-cloud-platform-lcp/load-s3-layer-ls3.md)
 * [LS3 with load\_acc](load-cloud-platform-lcp/ls3-with-load_acc.md)
 * [Turbo Offchain Upload Service](load-cloud-platform-lcp/turbo-offchain-upload-service.md)
+* [x402 Protocol Integration](load-cloud-platform-lcp/x402-protocol-integration.md)
 
 ## storage agents
 
