@@ -20,5 +20,10 @@ We are proud to be the first team that has worked on the intersection of x402 mi
 
 The x402 micropayments have been integrated on the ANS-104 gateway sidecar level of the s3 device. [check out source code](https://app.gitbook.com/u/9f5jQHFG1jWXf1Txd6jCIxFWKHD2).
 
+### x402 on Load Cloud Platform (LCP)
+
+x402 has been integrated on LCP, making it possible for LCP users to create x4-2 paywalled expireable links to their private objects (ANS-104 dataitems) on LCP\
+\[screenshot here]\
+\
 
 
