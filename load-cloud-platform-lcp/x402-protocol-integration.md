@@ -16,7 +16,7 @@ This protocol allows automated agents, crawlers, and digital services to conduct
 
 ### x402 and xANS-104 DataItems
 
-We are proud to be the first team that has worked on the intersection of x402 micropayments protocol and Arweave's ANS-104 data format. We have integrated the x402 protocol in Load's custom HyperBEAM device ([\~s3@1.0 device](../load-hyperbeam/s3-1.0-device.md)), resulting in the first ever expirable, paywalled, privately shareable ANS-104 DataItems.
+We are proud to be the first team that has worked on the intersection of [x402 micropayments protocol and Arweave's ANS-104 data format](https://402.load.network/). We have integrated the x402 protocol in Load's custom HyperBEAM device ([\~s3@1.0 device](../load-hyperbeam/s3-1.0-device.md)), resulting in the first ever expirable, paywalled, privately shareable ANS-104 DataItems.
 
 The x402 micropayments have been integrated on the ANS-104 gateway sidecar level of the s3 device. [check out source code](https://app.gitbook.com/u/9f5jQHFG1jWXf1Txd6jCIxFWKHD2).
 
@@ -37,5 +37,37 @@ x402 has been integrated on LCP, making it possible for LCP users to create x402
 
 #### x402 DIY
 
-#### &#x20; 
+The DIY method means doing what the LCP dashboard abstracts, first you need to create a private LS3 ANS-104 Dataitem and upload it to your LCP bucket (load-s3-agent [reference](https://github.com/loadnetwork/load-s3-agent)):
+
+```bash
+curl -X POST https://load-s3-agent.load.network/upload/private \
+  -H "Authorization: Bearer $load_acc_api_key" \
+  -H "signed: true" \
+  -H "bucket_name: $bucket_name" \
+  -H "x-dataitem-name: $dataitem_name" \
+  -H "x-folder-name: $folder_name" \ 
+  -F "file=@path-signed-dataitem.ans104" \
+  -F "content_type=application/octet-stream"
+```
+
+After that you have to generate the x402 signed shareable receipt using the HyperBEAM LS3 sidecar:
+
+```bash
+curl -X POST https://gateway.s3-node-1.load.network/sign/402 \
+  -H "Authorization: Bearer $CONTACT_US" \
+  -H "x-bucket-name: $bucket_name" \
+  -H "x-load-acc: $load_acc_api_key" \
+  -H "x-dataitem-key: $dataitem_key.ans104" \
+  -H "x-402-address: $payee_eoa" \
+  -H "x-402-amount: $usdc_amount" \
+  -H "x-expires-minutes: $set_expiry"
+```
+
+this curl request will return a base64 string, you use it to share the x402 paywalled ANS-104 DataItem as following: `https://402.load.network/$base64_string`
+
+\
+\
+
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
