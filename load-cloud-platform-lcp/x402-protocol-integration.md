@@ -26,11 +26,14 @@ There are two ways to create an x402 paywalled private expireable ANS-104 DataIt
 
 #### x402 on Load Cloud Platform (LCP)
 
-x402 has been integrated on LCP, making it possible for LCP users to create x402 paywalled, expirable links for their private objects (ANS-104 DataItems) on Load S3. The process is pretty simple and straightforward: fill in the parameters of the x402 request (set expiry , payee EOA, and USDC amount) and the dashboard will generate a ready-to-use x402 expirable DataItem URL.
+x402 has been integrated on LCP, making it possible for LCP users to create x402 paywalled, expirable links for their private objects (ANS-104 DataItems) on Load S3. The process is pretty simple and straightforward: fill in the parameters of the **Create Payment Link** request (set expiry , payee EOA, and USDC amount) and the dashboard will generate a ready-to-use x402 expirable DataItem URL.
+
+<figure><img src="../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
 
 \
-\[screenshot here]\
 
+
+<figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
 #### x402 DIY
 
