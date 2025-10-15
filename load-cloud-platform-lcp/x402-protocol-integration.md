@@ -18,7 +18,7 @@ This protocol allows automated agents, crawlers, and digital services to conduct
 
 We are proud to be the first team that has worked on the intersection of [x402 micropayments protocol and Arweave's ANS-104 data format](https://402.load.network/). We have integrated the x402 protocol in Load's custom HyperBEAM device ([\~s3@1.0 device](../load-hyperbeam/s3-1.0-device.md)), resulting in the first ever expirable, paywalled, privately shareable ANS-104 DataItems.
 
-The x402 micropayments have been integrated on the ANS-104 gateway sidecar level of the s3 device. [check out source code](https://app.gitbook.com/u/9f5jQHFG1jWXf1Txd6jCIxFWKHD2).
+The x402 micropayments have been integrated on the ANS-104 gateway sidecar level of the s3 device. [check out source code](https://github.com/loadnetwork/load_hb/tree/s3-node-1/native/s3_nif/src/sidecar).
 
 ### Creating x402 paywalled private dataitems
 
@@ -64,10 +64,6 @@ curl -X POST https://gateway.s3-node-1.load.network/sign/402 \
 ```
 
 this curl request will return a base64 string, you use it to share the x402 paywalled ANS-104 DataItem as following: `https://402.load.network/$base64_string`
-
-\
-\
-
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
