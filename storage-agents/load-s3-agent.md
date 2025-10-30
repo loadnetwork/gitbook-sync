@@ -19,7 +19,7 @@ The first agent in the list is [load-s3-agent](https://github.com/loadnetwork/lo
 
 ```bash
 echo -n "hello world" | curl -X POST https://load-s3-agent.load.network/upload \
-  -H "Authorization: Bearer REACH_OUT_TO_US" \
+  -H "Authorization: Bearer $load_acc_api_key" \
   -F "file=@-;type=text/plain" \
   -F "content_type=text/plain"
 ```
