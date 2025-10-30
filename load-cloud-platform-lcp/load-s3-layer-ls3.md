@@ -60,84 +60,13 @@ On `s3-node-1` — the sidecar is available under `https://gateway.s3-node-1.loa
 
 ### Developer Guide
 
-Load’s HyperBEAM node running the \~s3@1.0 device is available the following endpoint: [https://s3-node-0.load.network](https://s3-node-0.load.network/) – developers looking to use the HyperBEAM node as S3 endpoint, can use the official S3 SDKs as long as the used S3 commands are supported by `~s3@1.0`
+Load’s HyperBEAM node running the \~s3@1.0 device is available the following endpoint: [https://s3-node-1.load.network](https://s3-node-1.load.network/) – developers looking to use the HyperBEAM node as S3 endpoint, can use the official S3 SDKs as long as the used S3 commands are supported by `~s3@1.0 - (1:1 parity)` &#x20;
 
 #### Available Endpoints
 
-| Node Name | Endpoint                                                           | Features                                                                                                                                                                                        |
-| --------- | ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| S3 Node 0 | [https://s3-node-0.load.network ](https://s3-node-0.load.network/) | <ul><li>ao compute with offchain dataitems</li><li>Hybrid Gateway</li></ul>                                                                                                                     |
-| S3 Node 1 | [https://s3-node-1.load](https://s3-node-1.load/)                  | <ul><li>untouched ao compute (canonical)</li><li>Blazingly fast ANS-104 dataitems streaming from S3</li><li>Hybrid Gateway</li><li>Powers LCP, Turbo upload service and load-s3-agent</li></ul> |
+| Node Name                   | Endpoint                                                           | Features                                                                                                                                                                                                                                                                                                        |
+| --------------------------- | ------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| S3 Node 0 (deprecated)      | [https://s3-node-0.load.network ](https://s3-node-0.load.network/) | <ul><li>ao compute with offchain dataitems</li><li>Hybrid Gateway</li></ul>                                                                                                                                                                                                                                     |
+| S3 Node 1 (current testnet) | [https://s3-node-1.load](https://s3-node-1.load/)                  | <ul><li>untouched ao compute (canonical)</li><li>Blazingly fast ANS-104 dataitems streaming from S3 (sidecar)</li><li>Hybrid Gateway</li><li>Powers LCP, Turbo upload service and load-s3-agent</li><li>x402 integration</li><li>supports private, expirable shareable ANS-104 DataItems (S3 objects)</li></ul> |
 
-#### Installation
-
-#### NodeJS
-
-To install the official S3 library in NodeJS, run the following command
-
-```shell
-$ yarn add @aws-sdk/client-s3
-```
-
-**Initialization**
-
-In order to initialize the S3 client connected to the HyperBEAM node, you can do the following:
-
-```typescript
-import { S3Client } from "@aws-sdk/client-s3";
-
-const accessKeyId = process.env.LOAD_ACCESS_KEY;
-const secretAccessKey = process.env.LOAD_SECRET_ACCESS_KEY; 
-
-const s3Client = new S3Client({
-    region: "eu-west-2", // Required -- current supported region
-    endpoint: "https://s3-node-0.load.network/~s3@1.0", // Load.Network HB S3 endpoint
-    credentials: {
-        accessKeyId,
-        secretAccessKey,
-    },
-    forcePathStyle: true, // Required
-});
-```
-
-### Rust Examples
-
-```rust
-use aws_sdk_s3::error::SdkError;
-use aws_sdk_s3::operation::create_bucket::CreateBucketError;
-use aws_sdk_s3::Client;
-
-pub async fn create_client() -> Client {
-    let config = aws_config::from_env()
-        .endpoint_url("https://s3-node-0.load.network/~s3@1.0")
-        .region("eu-west-2")
-        .load()
-        .await;
-
-    let s3_config = aws_sdk_s3::config::Builder::from(&config)
-        .force_path_style(true)
-        .build();
-
-    Client::from_conf(s3_config)
-}
-
-pub async fn s3_create_bucket() -> Result<(), SdkError<CreateBucketError>> {
-    let client = create_client().await;
-    
-    match client.create_bucket()
-        .bucket("LoadNetworkBucketTest")
-        .send()
-        .await {
-            Ok(output) => {
-                println!("✅ Bucket created: {}", output.location().unwrap_or("(no location)"));
-                Ok(())
-            },
-            Err(err) => {
-                println!("❌ Error creating bucket: {}", err);
-                Err(err)
-            }
-    }
-}
-```
-
-For higher performance, use LS3 along the load balanced HyperBEAM S3 cluster - [check docs](ls3-with-load_acc.md)
+To learn how to start using Load S3 today, check out the following [page](ls3-with-load_acc.md)

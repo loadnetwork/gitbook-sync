@@ -4,7 +4,9 @@ description: Learn how to use Load S3 storage layer along LCP's load_acc api key
 
 # LS3 with load\_acc
 
-As of October 1st, 2025, it's no longer required to directly contact us to acquire Load S3 access keys to interact with the LS3's `drive.load.network` HyperBEAM cluster. Interacting with the Load S3 storage layer now has programmatic access with `load_acc` access keys and a new cluster endpoint: `https://api.load.network/s3`&#x20;
+{% hint style="info" %}
+As of October 1st, 2025, it's no longer required to directly contact us to acquire Load S3 access keys to interact with the LS3's `drive.load.network` HyperBEAM cluster. Interacting with the Load S3 storage layer now has programmatic access with `load_acc` access keys and a new cluster endpoint: `https://api.load.network/s3`
+{% endhint %}
 
 ### How to get load\_acc API keys
 
@@ -24,8 +26,8 @@ After creating a bucket and load\_acc API key, you can now interact with the Loa
 import { S3Client } from "@aws-sdk/client-s3";
 
 
-const endpoint = "https://api.load.network/s3"; // new endpoint, not drive.load.network 
-const accessKeyId = "load_acc_YOUR_LCP_ACCESS_KEY";
+const endpoint = "https://api.load.network/s3"; // LS3 HyperBEAM cluster 
+const accessKeyId = "load_acc_YOUR_LCP_ACCESS_KEY"; // get yours from cloud.load.network
 const secretAccessKey = ""; 
 
 // Initialize the S3 client
