@@ -11,7 +11,7 @@ The Load S3 storage layer is built on top of HyperBEAM as a device, and ao netwo
 The HyperBEAM S3 device offers maximum flexibility for HyperBEAM node operators, allowing them to either spin up MinIO clusters in the same location as the HyperBEAM node and rent their available storage, or connect to existing external clusters, offering native integration between hb’s s3 and devs existing storage clusters. For instance, Load’s S3 device is co-located with the MinIO clusters.
 
 {% hint style="success" %}
-To start using the Load S3 temporary storage layer today, checkout the LCP, LS3 with load\_acc and the Turbo upload service sections
+To start using the Load S3 temporary storage layer today, checkout the [LCP](cloud-platform-lcp.md), [LS3 with load\_acc](ls3-with-load_acc.md) and the [Turbo upload service](turbo-offchain-upload-service.md) sections.
 {% endhint %}
 
 ### Erasure-coded redundancy, fault tolerance, and data availability
@@ -29,7 +29,7 @@ The \~s3@1.0 device has been designed with a built-in data protocol to natively 
 ### Hybrid Gateway
 
 {% hint style="success" %}
-For a direct -low level- ANS-104 DataItem's data streaming from LS3, use the HyperBEAM [sidecar](https://app.gitbook.com/u/9f5jQHFG1jWXf1Txd6jCIxFWKHD2) gateway instead — access the offchain dataitem under: [https://gateway.s3-node-1.load.network/resolve/:dataitem\_id](https://gateway.s3-node-1.load.network/resolve/:dataitem_id)
+For a direct low level ANS-104 DataItem data streaming from LS3, use the HyperBEAM [sidecar](https://app.gitbook.com/u/9f5jQHFG1jWXf1Txd6jCIxFWKHD2) gateway instead — access the offchain dataitem under: [https://gateway.s3-node-1.load.network/resolve/:dataitem\_id](https://gateway.s3-node-1.load.network/resolve/:dataitem_id)
 {% endhint %}
 
 Given the S3 device’s native integration with objects serialized and stored as ANS-104 DataItems, we considered DataItem accessibility, such as resolving via Arweave gateways.
@@ -43,7 +43,7 @@ Building these extension components, a hb node running the \~[s3@1.0](mailto:s3@
 #### Load S3 Trust Assumptions, Optimismo
 
 {% hint style="success" %}
-For a higher level trust assumption, upload data to LS3 using the Turbo-compliant [upload service ](turbo-offchain-upload-service.md)which comes with a built-in system of signed receipts
+For a higher level trust assumption, upload data to LS3 using the Turbo-compliant [upload service](turbo-offchain-upload-service.md) which comes with a built-in system of signed receipts.
 {% endhint %}
 
 In the current release, Load S3 is a storage layer consisting of a single centralized yet verifiable storage provider (HyperBEAM node running the \~s3@1.0 device components).
@@ -64,9 +64,9 @@ Load’s HyperBEAM node running the \~s3@1.0 device is available the following e
 
 #### Available Endpoints
 
-| Node Name                   | Endpoint                                                           | Features                                                                                                                                                                                                                                                                                                        |
-| --------------------------- | ------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| S3 Node 0 (deprecated)      | [https://s3-node-0.load.network ](https://s3-node-0.load.network/) | <ul><li>ao compute with offchain dataitems</li><li>Hybrid Gateway</li></ul>                                                                                                                                                                                                                                     |
-| S3 Node 1 (current testnet) | [https://s3-node-1.load](https://s3-node-1.load/)                  | <ul><li>untouched ao compute (canonical)</li><li>Blazingly fast ANS-104 dataitems streaming from S3 (sidecar)</li><li>Hybrid Gateway</li><li>Powers LCP, Turbo upload service and load-s3-agent</li><li>x402 integration</li><li>supports private, expirable shareable ANS-104 DataItems (S3 objects)</li></ul> |
+| Node Name                   | Endpoint                                                               | Features                                                                                                                                                                                                                                                                                                        |
+| --------------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| S3 Node 1 (current testnet) | [https://s3-node-1.load](https://s3-node-1.load/)                      | <ul><li>untouched ao compute (canonical)</li><li>Blazingly fast ANS-104 dataitems streaming from S3 (sidecar)</li><li>Hybrid Gateway</li><li>Powers LCP, Turbo upload service and load-s3-agent</li><li>x402 integration</li><li>supports private, expirable shareable ANS-104 DataItems (S3 objects)</li></ul> |
+| ~~S3 Node 0 (deprecated)~~  | [~~https://s3-node-0.load.network~~ ](https://s3-node-0.load.network/) | <ul><li><del>ao compute with offchain dataitems</del></li><li><del>Hybrid Gateway</del></li></ul>                                                                                                                                                                                                               |
 
 To learn how to start using Load S3 today, check out the following [page](ls3-with-load_acc.md)
