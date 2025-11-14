@@ -17,6 +17,7 @@
 * [Network configurations](using-load-network/network-configurations.md)
 * [Supported Precompiles](using-load-network/supported-precompiles.md)
 * [JSON-RPC Methods](using-load-network/json-rpc-methods.md)
+* [Compute](using-load-network/compute.md)
 * [EVM Bundler (legacy)](using-load-network/evm-bundler-legacy/README.md)
   * [Load Network Bundler](using-load-network/evm-bundler-legacy/load-network-bundler.md)
   * [0xbabe2: Large Data Uploads](using-load-network/evm-bundler-legacy/0xbabe2-large-data-uploads.md)

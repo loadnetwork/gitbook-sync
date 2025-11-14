@@ -8,4 +8,4 @@
 * Powered by AO and HyperBEAM
 * Equipped with a bigger set of dev tools and APIs, offering higher stability
 
-However, we will keep this legacy section for EVM Bundlers in the docs for backward compatibility.
+However, we will keep this legacy section for EVM Bundlers in the docs for backward compatibility - soon it will enter sunsetting phase.
