@@ -58,6 +58,8 @@ The sidecar bypasses the technical need to deserialize the dataitem in order to 
 
 On `s3-node-1` — the sidecar is available under `https://gateway.s3-node-1.load.network/resolve/:offchain-dataitemid`&#x20;
 
+And to download the full LS3 DataItem binary (the .ans104 file), you can use the following endpoint: `https://gateway.s3-node-1.load.network/binary/:offchain-dataitemid`
+
 ### Developer Guide
 
 Load’s HyperBEAM node running the \~s3@1.0 device is available the following endpoint: [https://s3-node-1.load.network](https://s3-node-1.load.network/) – developers looking to use the HyperBEAM node as S3 endpoint, can use the official S3 SDKs as long as the used S3 commands are supported by `~s3@1.0 - (1:1 parity)` &#x20;
