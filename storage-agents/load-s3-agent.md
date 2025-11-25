@@ -111,6 +111,8 @@ curl -X POST https://load-s3-agent.load.network/tags/query \
 
 Pagination follows Arweave's GQL schema: optional `first` (default 25, max 100) and a cursor `after`.
 
+`full_metadata` flag (`Optional<bool>`) to return the full tags associated with a query's dataitem
+
 ```bash
 curl -X POST https://load-s3-agent.load.network/tags/query \
   -H "Content-Type: application/json" \
@@ -121,6 +123,7 @@ curl -X POST https://load-s3-agent.load.network/tags/query \
         "value": "tag1"
       }
     ],
+    "full_metadata": true,
     "first": 25,
     "after": null
   }'
