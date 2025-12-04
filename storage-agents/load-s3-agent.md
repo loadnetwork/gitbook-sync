@@ -38,6 +38,18 @@ echo -n "hello custom tagged world"  | curl -X POST https://load-s3-agent.load.n
     -F 'tags=[{"key":"tag1","value":"tag1"},{"key":"tag2","value":"tag2"}]'
 ```
 
+Optional: have the agent publish an offchain provenance record for the uploaded DataItem (the API returns the provenance transaction id in `offchain_provenance_proof`):
+
+```bash
+echo -n "hello provenance world" | curl -X POST https://load-s3-agent.load.network/upload \
+  -H "Authorization: Bearer $load_acc_api_key" \
+  -H "offchain_provenance: true" \
+  -F "file=@-;type=text/plain"
+```
+
+* onchain provenance example: https://viewblock.io/arweave/tx/b6kTeJISHCmKTqaq\_GK5g6hCGPWmMgfR7W4FcJwBwGU
+* offchain dataitem: https://gateway.s3-node-1.load.network/resolve/qvnTWVz4QqVAa7DsiiPER3HMArN88clg\_SZc1BIS63s
+
 #### Upload data and return an agent private signed DataItem
 
 \*\*\* N.B: any private DataItem does not have the tags indexed nor is queryable \*\*\*
