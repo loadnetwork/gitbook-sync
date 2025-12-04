@@ -102,11 +102,12 @@ curl -X POST https://load-s3-agent.load.network/tags/query \
         "value": "tag1"
       },
       {
-        "key": "tag1",
-        "value": "tag1"
+        "key": "tag2",
+        "value": "tag2"
       }
     ]
   }'
+
 ```
 
 Pagination follows Arweave's GQL schema: optional `first` (default 25, max 100) and a cursor `after`.
@@ -123,7 +124,7 @@ curl -X POST https://load-s3-agent.load.network/tags/query \
         "value": "tag1"
       }
     ],
-    "full_metadata": true,
+    "full_metadata": true
     "first": 25,
     "after": null
   }'
@@ -131,3 +132,34 @@ curl -X POST https://load-s3-agent.load.network/tags/query \
 ```
 
 if `page_info.has_next_page` returns true, reuse the `page_info.next_cursor` string as the next `after`.
+
+`count` reflects the number of items returned in the current page, while `total_count` includes every dataitem that matches the filters across all pages.
+
+### Load S3 Agent library
+
+**Adding load-s3-agent library**
+
+```toml
+[dependencies]
+load-s3-agent = { git = "https://github.com/loadnetwork/lcp-uploader-api.git", branch = "main" }
+```
+
+**Example**
+
+```rust
+use load_s3_agent::create_dataitem;
+
+fn build_item() -> anyhow::Result<()> {
+    // ensure UPLOADER_JWK is available in the environment (or .env)
+    std::env::set_var("UPLOADER_JWK", include_str!("../wallet.json"));
+
+    let item = create_dataitem(
+        b"hello world".to_vec(),
+        "text/plain",
+        &[("My-Tag".into(), "tag-value".into())],
+    )?;
+
+    println!("Signed data item id: {}", item.id());
+    Ok(())
+}
+```
