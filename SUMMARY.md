@@ -36,12 +36,7 @@
 * [LS3 with load\_acc](load-cloud-platform-lcp/ls3-with-load_acc.md)
 * [Turbo Offchain Upload Service](load-cloud-platform-lcp/turbo-offchain-upload-service.md)
 * [x402 Protocol Integration](load-cloud-platform-lcp/x402-protocol-integration.md)
-
-## storage agents
-
-* [Load S3 Agentic Storage](storage-agents/load-s3-agentic-storage.md)
-* [Load S3 Agent](storage-agents/load-s3-agent.md)
-* [Blobscan Agent](storage-agents/blobscan-agent.md)
+* [Load S3 Agent (HTTP API)](load-cloud-platform-lcp/load-s3-agent-http-api.md)
 
 ## load hyperbeam
 

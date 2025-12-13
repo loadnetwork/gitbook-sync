@@ -6,7 +6,7 @@ icon: bolt
 # Quickstart
 
 {% hint style="info" %}
-To easily feed Load Network docs to your favourite LLM, access the compressed knowledge (aka LLM.txt) file from Load Network: [llmtxt.xyz/g/loadnetwork/gitbook-sync/20](https://llmtxt.xyz/g/loadnetwork/gitbook-sync/20) (last update: 05/12/2025, 10:00:00 UTC)
+To easily feed Load Network docs to your favourite LLM, access the compressed knowledge (aka LLM.txt) file from Load Network: [llmtxt.xyz/g/loadnetwork/gitbook-sync/21](https://llmtxt.xyz/g/loadnetwork/gitbook-sync/21) (last update: 13/12/2025, 10:00:00 UTC)
 {% endhint %}
 
 Let's make it easy to get going with Load Network. In this doc, we'll go through the simplest ways to use Load across the most common use cases:
@@ -29,7 +29,7 @@ The easiest way to interface with Load Network storage capabilities is through t
 
 #### Load S3 Temporary Data Storage Layer (highly recommended)&#x20;
 
-The best data pipeline for massive uploads is to use the Load \~s3@1.0 HyperBEAM powered [storage layer](load-cloud-platform-lcp/load-s3-layer-ls3.md). The LS3 storage layer, run through a special set of HyperBEAM nodes, have the S3 objects serialized as ANS-104 DataItems by default, maintaining provenance and integrity when the uploader wishes to move the S3 object from the temporal storage layer to Arweave in a single [HTTP API request](storage-agents/load-s3-agent.md).&#x20;
+The best data pipeline for massive uploads is to use the Load \~s3@1.0 HyperBEAM powered [storage layer](load-cloud-platform-lcp/load-s3-layer-ls3.md). The LS3 storage layer, run through a special set of HyperBEAM nodes, have the S3 objects serialized as ANS-104 DataItems by default, maintaining provenance and integrity when the uploader wishes to move the S3 object from the temporal storage layer to Arweave in a single [HTTP API request](load-cloud-platform-lcp/load-s3-agent-http-api.md).&#x20;
 
 #### Highly scalable bundling service
 

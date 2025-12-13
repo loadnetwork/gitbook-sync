@@ -2,7 +2,7 @@
 description: About Load Network precompiled contracts
 ---
 
-# Load Network Precompiles
+# Supported Precompiles
 
 ### What Are Precompiled Contracts?
 
@@ -185,4 +185,4 @@ The eip-4844 transaction fields that you can access from the 0x21 query are:
 * Enables using blobs for purposes beyond rollups DA, opening doors for data-intensive blob-based applications with permanent blob access
 
 \
-Check out the 0x21 precompile source code [here](https://github.com/weaveVM/wvm-reth/pull/41/files).\
+Check out the 0x21 precompile source code [here](https://github.com/weaveVM/wvm-reth/pull/41/files).<br>

@@ -43,8 +43,7 @@ init.sh will generate basic configuration for `da_config.json` in `dymint.toml` 
 In this example we use `PRIVATE_KEY` of your LN address. It's not the most secure way to handle transaction signing and that's why we also provide an ability to use web3signer as a signing method.  To enable web3signer you will need to change init.sh script and add correspondent fields or change `da_config.json` in `dymint.toml` directly. \
 e.g\
 \
-`da_config = '{"endpoint":"https://alphanet.load.network","chain_id":9496,"timeout":"60000000000","web3_signer_endpoint":"http://localhost:9000"}'`\
-
+`da_config = '{"endpoint":"https://alphanet.load.network","chain_id":9496,"timeout":"60000000000","web3_signer_endpoint":"http://localhost:9000"}'`<br>
 
 and to enable tls next fields should be add to the json file:
 
@@ -106,8 +105,7 @@ $EXECUTABLE start --log_level=debug \
 
 ```
 
-\
-
+<br>
 
 in rollap-evm log you will eventually see something like this:
 

@@ -30,8 +30,7 @@ x402 has been integrated on LCP, making it possible for LCP users to create x402
 
 <figure><img src="../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
 
-\
-
+<br>
 
 <figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 

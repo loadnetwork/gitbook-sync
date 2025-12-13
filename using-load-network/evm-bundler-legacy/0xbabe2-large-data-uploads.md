@@ -10,7 +10,7 @@ description: >-
 
 0xbabe2 is the newest data transaction format from the Bundler data protocol. Also called "Large Bundle," it's a bundle under version `0xbabe2` (address: [0xbabe2dCAf248F2F1214dF2a471D77bC849a2Ce84](https://explorer.wvm.dev/address/0xbabe2dCAf248F2F1214dF2a471D77bC849a2Ce84)) that exceeds the Load Network L1 and `0xbabe1` transaction input size limits, introducing incredibly high size efficiency to data storage on Load Network.
 
-For example, with Alphanet v0.4.0 metrics running at 500 mgas/s, a Large Bundle has a max size of 246 GB. However, to ensure a smooth DevX and optimal finalization period (aka "safe mode"), we have limited the 0xbabe2 transaction input limit to 2GB at the [Bundler SDK ](broken-reference)level. If you want higher limits, you can achieve this by changing a simple constant!
+For example, with Alphanet v0.4.0 metrics running at 500 mgas/s, a Large Bundle has a max size of 246 GB. However, to ensure a smooth DevX and optimal finalization period (aka "safe mode"), we have limited the 0xbabe2 transaction input limit to 2GB at the [Bundler SDK ](/broken/pages/34Pcu1DGTIgvEMBj7DfH)level. If you want higher limits, you can achieve this by changing a simple constant!
 
 {% hint style="success" %}
 If you have 10 hours to spare, make several teas and watch this 1 GB video streamed to you onchain from the Load Network!\
@@ -112,8 +112,7 @@ async fn send_large_bundle_multi_thread() -> Result<String, Error> {
 
 #### 0xbabe2 Data Retrieval
 
-0xbabe2 transaction data retrieval can be done either using the Rust SDK or the REST API. Using the REST API to resolve (chunk reconstruction until reaching final data) is faster for user usage as it does chunks streaming, resulting in near-instant data usability (e.g., rendering in browser).\
-
+0xbabe2 transaction data retrieval can be done either using the Rust SDK or the REST API. Using the REST API to resolve (chunk reconstruction until reaching final data) is faster for user usage as it does chunks streaming, resulting in near-instant data usability (e.g., rendering in browser).<br>
 
 **Rust SDK**
 

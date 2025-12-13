@@ -72,4 +72,4 @@ Useful Links
 * [Discord](https://dsc.gg/wvm)
 * [Explorer](https://explorer.wvm.dev)
 * [Data storage price calculator](https://wvm.dev/calculator)
-* [Alphanet faucet](https://wvm.dev/faucet)\
+* [Alphanet faucet](https://wvm.dev/faucet)<br>
