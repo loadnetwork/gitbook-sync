@@ -18,7 +18,7 @@ The easiest way to access Load S3 stored dataitems is the HyperBEAM gateway side
 
 For entreprise Load S3 clients, the methods above are both available under the gateway, but for the load s3-fast cluster
 
-* `GET /resolve/{dataitem_key}`
+* `GET /resolve/fast/{dataitem_key}`
 * `GET /binary/fast/{dataitem_key}`&#x20;
 
 Source code: [https://github.com/loadnetwork/load\_hb/tree/s3-node-1/native/s3\_nif/src/sidecar](https://github.com/loadnetwork/load_hb/tree/s3-node-1/native/s3_nif/src/sidecar)&#x20;
