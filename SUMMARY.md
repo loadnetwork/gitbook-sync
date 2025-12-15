@@ -37,6 +37,7 @@
 * [Turbo Offchain Upload Service](load-cloud-platform-lcp/turbo-offchain-upload-service.md)
 * [x402 Protocol Integration](load-cloud-platform-lcp/x402-protocol-integration.md)
 * [Load S3 Agent (HTTP API)](load-cloud-platform-lcp/load-s3-agent-http-api.md)
+* [Load S3 DataItems Gateway](load-cloud-platform-lcp/load-s3-dataitems-gateway.md)
 
 ## load hyperbeam
 
