@@ -159,7 +159,7 @@ Retrieve the latest indexed metadata (content type, size, tags, timestamps) for 
 curl -X POST https://load-s3-agent.load.network/query/dataitem \
   -H "Content-Type: application/json" \
   -d '{
-    "dataitem_id": "lIBThW1eowNfBTotAY2cTIIaqtZggtJRQTdHF_14co8"
+    "dataitem_id": "ig0_Hw1VW2uQRJFV-RPQ2SRpiougpJ4JkWEtr6kP_Fc"
   }'
 ```
 
