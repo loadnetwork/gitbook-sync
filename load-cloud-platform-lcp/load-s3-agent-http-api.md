@@ -2,7 +2,7 @@
 description: The LCP data agent
 ---
 
-# Load S3 Agent
+# Load S3 Agent (HTTP API)
 
 ### About
 
@@ -16,6 +16,7 @@ description: The LCP data agent
 * GET `/stats` : storage stats
 * GET `/:dataitem_id` : generate a presigned get\_object URL to access the ANS-104 DataItem data - **DEPRECATED since v0.7.0** - use `gateway.s3-node-1.load.network/resolve/$DATAITEM_ID` instead
 * GET `/tags/query` : query dataitems for a given tags KV pairs.
+* POST `/query/dataitem` : fetch full metadata for a specific `dataitem_id`.
 * POST `/upload` : post data (or signed dataitem) to store a public offchain DataItem on `~s3@1.0`
 * POST `/upload/private` : post data (or signed dataitem) to store a private offchain DataItem on `~s3@1.0`
 * POST `/post/:dataitem_id` : post an `~s3@1.0` public DataItem to Arweave via Turbo (N.B: Turbo covers any dataitem cost with size <= 100KB).
@@ -124,6 +125,7 @@ curl -X POST https://load-s3-agent.load.network/tags/query \
 
 * Pagination follows Arweave's GQL schema: optional `first` (default 25, max 100) and a cursor `after`.
 * `full_metadata` flag (`Optional<bool>`) to return the full tags associated with a query's dataitem
+* each returned item includes `dataitem_size` (bytes) when available (v0.9.1 and onwards)
 * `created_after` / `created_before` (ISO-8601/RFC3339 strings) filter items by their `created_at` timestamp (inclusive bounds).
 
 ```bash
@@ -148,6 +150,18 @@ curl -X POST https://load-s3-agent.load.network/tags/query \
 if `page_info.has_next_page` returns true, reuse the `page_info.next_cursor` string as the next `after`.
 
 `count` reflects the number of items returned in the current page, while `total_count` includes every dataitem that matches the filters across all pages.
+
+#### Querying a DataItem by ID
+
+Retrieve the latest indexed metadata (content type, size, tags, timestamps) for a single dataitem:
+
+```bash
+curl -X POST https://load-s3-agent.load.network/query/dataitem \
+  -H "Content-Type: application/json" \
+  -d '{
+    "dataitem_id": "lIBThW1eowNfBTotAY2cTIIaqtZggtJRQTdHF_14co8"
+  }'
+```
 
 ### Load S3 Agent library
 
