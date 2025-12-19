@@ -48,6 +48,15 @@ echo -n "hello provenance world" | curl -X POST https://load-s3-agent.load.netwo
   -F "file=@-;type=text/plain"
 ```
 
+offchain provenance data protocol tags on Arweave (per provenance proof):
+
+* `Storage-Provider: Load-S3`
+* `Agent-Version: ${VERSION}`
+* `Dataitem-Record: ${OFFCHAIN_LS3_DATAITEM_ID}`
+* `Data-Protocol: Load-S3-Offchain-Provenance`
+
+Examples:
+
 * onchain provenance example: https://viewblock.io/arweave/tx/b6kTeJISHCmKTqaq\_GK5g6hCGPWmMgfR7W4FcJwBwGU
 * offchain dataitem: https://gateway.s3-node-1.load.network/resolve/qvnTWVz4QqVAa7DsiiPER3HMArN88clg\_SZc1BIS63s
 
