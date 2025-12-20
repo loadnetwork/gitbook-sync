@@ -13,9 +13,9 @@ description: The LCP data agent
 ### Agent API
 
 * GET `/` : agent info
-* GET `/stats` : storage stats
+* GET `/provenance/{id}` : return the onchain provenance proof of an offchain ANS-104 dataitem (only for dataitems that enabled the onchain provenance flag at upload).
 * GET `/:dataitem_id` : generate a presigned get\_object URL to access the ANS-104 DataItem data - **DEPRECATED since v0.7.0** - use `gateway.s3-node-1.load.network/resolve/$DATAITEM_ID` instead
-* GET `/tags/query` : query dataitems for a given tags KV pairs.
+* POST `/tags/query` : query dataitems for a given tags KV pairs.
 * POST `/query/dataitem` : fetch full metadata for a specific `dataitem_id`.
 * POST `/upload` : post data (or signed dataitem) to store a public offchain DataItem on `~s3@1.0`
 * POST `/upload/private` : post data (or signed dataitem) to store a private offchain DataItem on `~s3@1.0`
@@ -185,6 +185,7 @@ load-s3-agent = { git = "https://github.com/loadnetwork/lcp-uploader-api.git", b
 
 ```rust
 use load_s3_agent::create_dataitem;
+use load_s3_agent::{get_dataitem_provenance_record, DataItemProvenanceRecord};
 
 fn build_item() -> anyhow::Result<()> {
     // ensure UPLOADER_JWK is available in the environment (or .env)
