@@ -6,7 +6,7 @@ description: The LCP data agent
 
 ### About
 
-`s3-load-agent` is a data agent built on top of HyperBEAM `~s3@1.0` temporal data storage device. This agent orchestrates the location of the data moving it from temporal to permanent (Arweave).
+`load-s3-agent` is a data agent built on top of HyperBEAM `~s3@1.0` temporal data storage device. This agent orchestrates the location of the data moving it from temporal to permanent (Arweave).
 
 > N.B: beta testing release, unstable and subject to breaking changes, use in testing enviroments only.
 
@@ -53,6 +53,7 @@ offchain provenance data protocol tags on Arweave (per provenance proof):
 * `Storage-Provider: Load-S3`
 * `Agent-Version: ${VERSION}`
 * `Dataitem-Record: ${OFFCHAIN_LS3_DATAITEM_ID}`
+* `Version:$PROVENANCE_PROTOCOL_VERSION` &#x20;
 * `Data-Protocol: Load-S3-Offchain-Provenance`
 
 Examples:
