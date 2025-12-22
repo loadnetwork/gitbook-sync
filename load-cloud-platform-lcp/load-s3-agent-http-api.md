@@ -44,7 +44,7 @@ Optional: have the agent publish an offchain provenance record for the uploaded 
 ```bash
 echo -n "hello provenance world" | curl -X POST https://load-s3-agent.load.network/upload \
   -H "Authorization: Bearer $load_acc_api_key" \
-  -H "offchain_provenance: true" \
+  -H "offchain-provenance: true" \
   -F "file=@-;type=text/plain"
 ```
 
@@ -58,8 +58,9 @@ offchain provenance data protocol tags on Arweave (per provenance proof):
 
 Examples:
 
-* onchain provenance example: https://viewblock.io/arweave/tx/b6kTeJISHCmKTqaq\_GK5g6hCGPWmMgfR7W4FcJwBwGU
-* offchain dataitem: https://gateway.s3-node-1.load.network/resolve/qvnTWVz4QqVAa7DsiiPER3HMArN88clg\_SZc1BIS63s
+* onchain provenance example: https://viewblock.io/arweave/tx/fnmmd6pqOOQFFpscH8AB4CyGDsGSt\_fG5VCPJioBG3c &#x20;
+* offchain dataitem: https://gateway.s3-node-1.load.network/resolve/gT03XTtL0GCfb2AxJFjg8OVkhMuLQvwQVi7KvrbKYF8
+* provenance receipt (including settlement): https://load-s3-agent.load.network/provenance/gT03XTtL0GCfb2AxJFjg8OVkhMuLQvwQVi7KvrbKYF8
 
 #### Upload data and return an agent private signed DataItem
 
