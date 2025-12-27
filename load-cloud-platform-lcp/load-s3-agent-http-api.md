@@ -131,11 +131,12 @@ curl -X POST https://load-s3-agent.load.network/tags/query \
       }
     ]
   }'
-
 ```
 
 * Pagination follows Arweave's GQL schema: optional `first` (default 25, max 100) and a cursor `after`.
 * `full_metadata` flag (`Optional<bool>`) to return the full tags associated with a query's dataitem
+* `owner` / `target` filters are supported (can be used with or without `filters`)
+* Tip: `owner` / `target` query support is available from agent `v0.10.0`
 * each returned item includes `dataitem_size` (bytes) when available (v0.9.1 and onwards)
 * `created_after` / `created_before` (ISO-8601/RFC3339 strings) filter items by their `created_at` timestamp (inclusive bounds).
 
@@ -150,12 +151,41 @@ curl -X POST https://load-s3-agent.load.network/tags/query \
       }
     ],
     "full_metadata": true,
+    "owner": "2BBwe2pSXn_Tp-q_mHry0Obp88dc7L-eDIWx0_BUfD0",
+    "target": null,
     "created_after": "2025-12-01T00:00:00Z",
     "created_before": "2025-12-05T00:00:00Z",
     "first": 25,
     "after": null
   }'
+```
 
+Owner-only query:
+
+```bash
+curl -X POST https://load-s3-agent.load.network/tags/query \
+  -H "Content-Type: application/json" \
+  -d '{
+    "filters": [],
+    "owner": "2BBwe2pSXn_Tp-q_mHry0Obp88dc7L-eDIWx0_BUfD0"
+  }'
+```
+
+Owner + tags query:
+
+```bash
+curl -X POST https://load-s3-agent.load.network/tags/query \
+  -H "Content-Type: application/json" \
+  -d '{
+    "filters": [
+      {
+        "key": "Content-Type",
+        "value": "text/plain"
+      }
+    ],
+    "owner": "2BBwe2pSXn_Tp-q_mHry0Obp88dc7L-eDIWx0_BUfD0",
+    "full_metadata": true
+  }'
 ```
 
 if `page_info.has_next_page` returns true, reuse the `page_info.next_cursor` string as the next `after`.
@@ -170,7 +200,7 @@ Retrieve the latest indexed metadata (content type, size, tags, timestamps) for 
 curl -X POST https://load-s3-agent.load.network/query/dataitem \
   -H "Content-Type: application/json" \
   -d '{
-    "dataitem_id": "ig0_Hw1VW2uQRJFV-RPQ2SRpiougpJ4JkWEtr6kP_Fc"
+    "dataitem_id": "lIBThW1eowNfBTotAY2cTIIaqtZggtJRQTdHF_14co8"
   }'
 ```
 
@@ -184,6 +214,8 @@ load-s3-agent = { git = "https://github.com/loadnetwork/lcp-uploader-api.git", b
 ```
 
 **Example**
+
+Codec helpers (owner/target derivation) are available under `load_s3_agent::codec`.
 
 ```rust
 use load_s3_agent::create_dataitem;
@@ -200,6 +232,18 @@ fn build_item() -> anyhow::Result<()> {
     )?;
 
     println!("Signed data item id: {}", item.id());
+    Ok(())
+}
+```
+
+```rust
+use load_s3_agent::{codec::derive_owner_address, create_dataitem};
+
+fn owner_from_item() -> anyhow::Result<()> {
+    std::env::set_var("UPLOADER_JWK", include_str!("../wallet.json"));
+    let item = create_dataitem(b"hello world".to_vec(), "text/plain", &[])?;
+    let owner = derive_owner_address(&item).unwrap_or_default();
+    println!("owner: {owner}");
     Ok(())
 }
 ```
