@@ -38,7 +38,7 @@
 * [x402 Protocol Integration](load-cloud-platform-lcp/x402-protocol-integration.md)
 * [Load S3 Agent (HTTP API)](load-cloud-platform-lcp/load-s3-agent-http-api.md)
 * [Load S3 DataItems Gateway](load-cloud-platform-lcp/load-s3-dataitems-gateway.md)
-* [WebApps Deployments (permaweb-deploy)](load-cloud-platform-lcp/webapps-deployments-permaweb-deploy.md)
+* [WebApps Deployment (permaweb-deploy)](load-cloud-platform-lcp/webapps-deployment-permaweb-deploy.md)
 
 ## load hyperbeam
 

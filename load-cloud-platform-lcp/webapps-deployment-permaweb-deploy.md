@@ -2,7 +2,7 @@
 description: How to use Arweave's permaweb-deploy with preview temporary deployments
 ---
 
-# WebApps Deployments (permaweb-deploy)
+# WebApps Deployment (permaweb-deploy)
 
 {% hint style="info" %}
 Inspired by the [cookbook github action deployment guide](https://cookbook.arweave.dev/guides/deployment/github-action.html), `permaweb-deploy` is a Node.js command-line tool designed to streamline the deployment of web applications to the permaweb using Arweave. It uploads your build folder or a single file, creates Arweave manifests, and updates ArNS (Arweave Name Service) records via ANT (Arweave Name Token) with the transaction ID. [source](https://github.com/permaweb/permaweb-deploy)
@@ -12,7 +12,7 @@ We have forked the original `permaweb-deploy` CLI to add support for Load S3 as 
 
 ### Preview Feature in Details
 
-the loadnetwork permaweb-deploy forked CLI have the `--preview` feature flag, where if used, the web app (UI) is deployed on Load S3 as [xANS-104](https://blog.load.network/xans-104) dataitem instead of having the permanent-only deployment option.
+the loadnetwork's `permaweb-deploy` forked CLI have the `--preview` feature flag, where if used, the web app (UI) is deployed on Load S3 as [xANS-104](https://blog.load.network/xans-104) dataitem instead of having the permanent-only deployment option.
 
 This feature unlocks missing features in permaweb deployment workflow: staging deployments. With this feature, you can deploy as you work with Vercel (dev UX), stage deployment as `preview`, promote to `prod` only when it is ok to commit the webapp ui permanently on Arweave.
 
@@ -59,3 +59,5 @@ Example response:
 Uploaded successfully: Uk-b10wtSSVShM3dg64XzaP9TOusnMsHirpWemb8b98
 Visit your site: https://gateway.s3-node-1.load.network/resolve/preview/Uk-b10wtSSVShM3dg64XzaP9TOusnMsHirpWemb8b98
 ```
+
+Additionally you can access the Arweave Manifest JSON's raw payload using the `/resolve/{dataitem_id}` endpoint; example: [https://gateway.s3-node-1.load.network/resolve/Uk-b10wtSSVShM3dg64XzaP9TOusnMsHirpWemb8b98](https://gateway.s3-node-1.load.network/resolve/Uk-b10wtSSVShM3dg64XzaP9TOusnMsHirpWemb8b98)
