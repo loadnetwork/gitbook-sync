@@ -61,3 +61,11 @@ Visit your site: https://gateway.s3-node-1.load.network/resolve/preview/Uk-b10wt
 ```
 
 Additionally you can access the Arweave Manifest JSON's raw payload using the `/resolve/{dataitem_id}` endpoint; example: [https://gateway.s3-node-1.load.network/resolve/Uk-b10wtSSVShM3dg64XzaP9TOusnMsHirpWemb8b98](https://gateway.s3-node-1.load.network/resolve/Uk-b10wtSSVShM3dg64XzaP9TOusnMsHirpWemb8b98)
+
+#### anchor
+
+to anchor load s3 preview (staging) deployment to Arweave while maintaining determinism and provenance:
+
+```bash
+permaweb-deploy deploy --anchor --preview-id <manifest-id> --wallet ./wallet.json
+```
