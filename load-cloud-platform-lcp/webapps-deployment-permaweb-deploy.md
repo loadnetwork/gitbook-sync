@@ -24,9 +24,12 @@ permaweb-deploy's --preview feature uses xANS-104 dataitems under the hood, enab
 
 First, clone the repository locally: [https://github.com/loadnetwork/permaweb-deploy](https://github.com/loadnetwork/permaweb-deploy)
 
-#### **setup**
+#### **full setup**
 
 ```bash
+git clone https://github.com/loadnetwork/permaweb-deploy
+cd permaweb-deploy
+
 pnpm install
 pnpm build
 pnpm link --global
@@ -69,3 +72,5 @@ to anchor load s3 preview (staging) deployment to Arweave while maintaining dete
 ```bash
 permaweb-deploy deploy --anchor --preview-id <manifest-id> --wallet ./wallet.json
 ```
+
+to access deployments, either staging (temporary) or prod (arweave-settled), check the [LS3 Dataitems gateways page](load-s3-dataitems-gateway.md)
