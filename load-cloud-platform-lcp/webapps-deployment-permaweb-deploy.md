@@ -22,9 +22,13 @@ permaweb-deploy's --preview feature uses xANS-104 dataitems under the hood, enab
 
 ### Dev Guide
 
-First, clone the repository locally: [https://github.com/loadnetwork/permaweb-deploy](https://github.com/loadnetwork/permaweb-deploy)
+#### **option 1: npmjs package install**
 
-#### **full setup**
+```bash
+npm i -g @loadnetwork/permaweb-deploy
+```
+
+#### option 2: dev install from source
 
 ```bash
 git clone https://github.com/loadnetwork/permaweb-deploy
@@ -35,15 +39,19 @@ pnpm build
 pnpm link --global
 ```
 
+{% hint style="info" %}
+To use the `@loadnetwork/permaweb-deploy` CLI, you can use either `load-permaweb-deploy` or the fork's canonical `permaweb-deploy` cli name. to avoid conflicts, we advise using `load-permaweb-dpeloy` for load's fork, as in the examples below.
+{% endhint %}
+
 #### **deploy**
 
 from your ui folder:
 
 ```bash
-permaweb-deploy deploy --preview --deploy-folder ./dist --wallet ./wallet.json
+load-permaweb-deploy deploy --preview --deploy-folder ./dist --wallet ./wallet.json
 ```
 
-if you want to avoid linking, run it directly from the repo:
+\[dev] if you want to avoid linking, run it directly from the repo:
 
 ```bash
 node ./bin/run.js deploy --preview --deploy-folder /path-to-dist/dist --wallet /path-to-wallet/wallet.json
@@ -70,7 +78,7 @@ Additionally you can access the Arweave Manifest JSON's raw payload using the `/
 to anchor load s3 preview (staging) deployment to Arweave while maintaining determinism and provenance:
 
 ```bash
-permaweb-deploy deploy --anchor --preview-id <manifest-id> --wallet ./wallet.json
+load-permaweb-deploy deploy --anchor --preview-id <manifest-id> --wallet ./wallet.json
 ```
 
 to access deployments, either staging (temporary) or prod (arweave-settled), check the [LS3 Dataitems gateways page](load-s3-dataitems-gateway.md)
