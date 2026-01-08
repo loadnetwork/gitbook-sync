@@ -205,6 +205,19 @@ curl -X POST https://load-s3-agent.load.network/query/dataitem \
   }'
 ```
 
+#### Associating data with a pool
+
+[Pools](https://data.load.network/pools) are an experimental feature which will allow crowdfunded settlement of temporary DataItems to Arweave using [xANS-104 paradigm](https://blog.load.network/xans-104/). To associate data with a pool when uploading it, set a `Data-Protocol` tag:
+
+```bash
+echo -n "hello custom tagged world" | curl -X POST https://load-s3-agent.load.network/upload
+-H "Authorization: Bearer $load_acc_api_key"
+-F "file=@-;type=text/plain"
+-F 'tags=[{"key":"Data-Protocol","value":"MyCustomValue"}]'
+```
+
+Items with protocol tags will be displayed in the pools explorer when the feature goes into public beta.
+
 ### Load S3 Agent library
 
 **Adding load-s3-agent library**
