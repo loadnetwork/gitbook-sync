@@ -16,6 +16,8 @@ description: The LCP data agent
 * GET `/provenance/{id}` : return the onchain provenance proof of an offchain ANS-104 dataitem (only for dataitems that enabled the onchain provenance flag at upload).
 * GET `/:dataitem_id` : generate a presigned get\_object URL to access the ANS-104 DataItem data - **DEPRECATED since v0.7.0** - use `gateway.s3-node-1.load.network/resolve/$DATAITEM_ID` instead
 * GET `/agg/daily?days=N` : return the sum-per-day new added data size and dataitems count. N default to 30.
+* GET `/agg/daily/mime` : return the aggregated content-type frequency per day.
+* GET `/agg/daily/anchored` : return the aggregated count of anchored LS3 dataitems to Arweave.
 * POST `/tags/query` : query dataitems for a given tags KV pairs.
 * POST `/query/dataitem` : fetch full metadata for a specific `dataitem_id`.
 * POST `/upload` : post data (or signed dataitem) to store a public offchain DataItem on `~s3@1.0`
