@@ -32,7 +32,7 @@ const secretAccessKey = "";
 
 // Initialize the S3 client
 const s3Client = new S3Client({
-  region: "us-east-1",
+  region: "us-east-2",
   endpoint,
   credentials: {
     accessKeyId,
